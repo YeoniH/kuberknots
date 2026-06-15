@@ -1,0 +1,20 @@
+---
+title: ""
+comments: false
+listing:
+  contents: "episodes/ep-*.qmd"
+  type: grid
+  sort: "date desc"
+  categories: true
+  fields: [image, title, subtitle, description, categories]
+  page-size: 12
+---
+
+::: {.page-heading}
+<p class="eyebrow">Episodes</p>
+
+# Choose a knot to untangle.
+
+Each episode page is designed as a learning space: audio first, then speaker context, transcript, concepts, quiz, and an optional moderated route for comments or questions.
+:::
+

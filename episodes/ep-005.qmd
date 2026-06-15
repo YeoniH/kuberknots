@@ -1,0 +1,357 @@
+---
+title: "Game Theory and Decision Making"
+subtitle: "Iman Shames introduces game theory, Nash equilibrium, belief hierarchies, and everyday choices in human and human-machine interaction."
+date: "2025-10-31"
+image: "../assets/img/episode-placeholder.svg"
+categories: [Season 1, game theory, decision making, equilibrium]
+comments: false
+---
+
+```{=html}
+<style>
+/* Hide Quarto's automatically generated title/subtitle/date block on episode pages. */
+#title-block-header,
+.quarto-title-block {
+  display: none;
+}
+</style>
+```
+
+::: {.episode-shell}
+::: {.episode-hero}
+<p class="eyebrow">Season 1 · Episode 5</p>
+
+# Game Theory and Decision Making
+
+Join Iman as he unpacks the world of game theory, from cooperation and competition to Nash equilibrium and belief hierarchies. Discover how these ideas help us understand everyday choices, group projects, and even human–machine interaction.
+
+::: {.audio-card}
+## Listen
+
+```{=html}
+<div class="listen-links" aria-label="Listen to this episode on external platforms">
+  <a class="listen-icon-link" href="https://open.spotify.com/episode/3Ar0Eqag07Yqvo24desJLN?si=MNZyaN58QpCul5xWUdobBw" target="_blank" rel="noopener noreferrer" aria-label="Listen on Spotify">
+    <i class="bi bi-spotify" aria-hidden="true"></i>
+    <span class="visually-hidden">Spotify</span>
+  </a>
+  <a class="listen-icon-link" href="https://youtu.be/6fHRvV-Gh0Q?si=ts8Lyz8XP7YVhHhb" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+    <i class="bi bi-youtube" aria-hidden="true"></i>
+    <span class="visually-hidden">YouTube</span>
+  </a>
+</div>
+```
+:::
+:::
+
+## Guest speaker
+
+::: {.speaker-card}
+::: {.speaker-photo}
+![](../assets/img/iman.jpg){fig-alt="portrait-iman"}
+:::
+
+::: {.speaker-bio}
+### Iman Shames
+
+Iman Shames is a Professor of Mechatronics and the Mechatronics Cluster lead as well as the CIICADA Lab director at the School of Engineering, the Australian National University. Previously, he had been an Associate Professor at the Department of Electrical and Electronic Engineering, the University of Melbourne from 2014 to 2020 and a Senior Lecturer and a McKenzie fellow at the same department from 2012 to 2014, and before that he was an ACCESS Postdoctoral Researcher at the ACCESS Linnaeus Centre, the KTH Royal Institute of Technology, Stockholm, Sweden. He received his B.Sc. degree in Electrical Engineering from Shiraz University in 2006, and the PhD degree in engineering from the Australian National University, Canberra, Australia in 2011. His current research interests include, but are not limited to, decision making for dynamical systems under uncertainty, optimisation theory and its application in control and estimation, and mathematical systems theory of cyber-physical systems.
+:::
+:::
+
+## Quick quiz
+
+```{=html}
+<div class="quiz-card interactive-quiz">
+  <div class="quiz-stage" aria-live="polite"></div>
+<script type="application/json" class="quiz-data">
+[
+  {
+    "question": "What does game theory study?",
+    "options": [
+      {
+        "text": "Only board games like chess",
+        "correct": false,
+        "feedback": "Game theory applies far beyond board games and is used to study strategic interactions in economics, politics, engineering, biology, and many other fields."
+      },
+      {
+        "text": "The randomness in gambling",
+        "correct": false,
+        "feedback": "While uncertainty can be part of a game, game theory focuses on strategic decision-making between interacting players."
+      },
+      {
+        "text": "How decision-makers’ actions and payoffs interact",
+        "correct": true,
+        "feedback": "Correct! Game theory studies situations where the outcomes for each decision-maker depend on the choices made by others."
+      },
+      {
+        "text": "The mathematics of computer graphics",
+        "correct": false,
+        "feedback": "Computer graphics relies on mathematics, but it is not the focus of game theory."
+      }
+    ]
+  },
+  {
+    "question": "Which of the following best describes a zero-sum game?",
+    "options": [
+      {
+        "text": "One player’s gain is exactly the other player’s loss",
+        "correct": true,
+        "feedback": "Correct! In a zero-sum game, the total payoff remains constant, so one player's gain is balanced by another player's loss."
+      },
+      {
+        "text": "Both players cooperate for mutual benefit",
+        "correct": false,
+        "feedback": "Cooperation can create outcomes where everyone benefits, which is different from a zero-sum game."
+      },
+      {
+        "text": "No decisions are made by either player",
+        "correct": false,
+        "feedback": "Game theory focuses on decision-making, so players still make choices in zero-sum games."
+      },
+      {
+        "text": "Both players win or both lose together",
+        "correct": false,
+        "feedback": "This describes a shared outcome rather than a strictly zero-sum situation."
+      }
+    ]
+  },
+  {
+    "question": "What is a Nash equilibrium?",
+    "options": [
+      {
+        "text": "A situation where all payoffs are equal",
+        "correct": false,
+        "feedback": "Players can have very different payoffs in a Nash equilibrium."
+      },
+      {
+        "text": "A situation where everyone cooperates fully",
+        "correct": false,
+        "feedback": "Cooperation may occur, but it is not required for a Nash equilibrium."
+      },
+      {
+        "text": "A condition where players know nothing about each other",
+        "correct": false,
+        "feedback": "The amount of information available varies across games and does not define a Nash equilibrium."
+      },
+      {
+        "text": "A point where no player can improve their payoff by changing strategy alone",
+        "correct": true,
+        "feedback": "Correct! A Nash equilibrium occurs when each player's strategy is the best response to the strategies chosen by the others."
+      }
+    ]
+  }
+]
+</script>
+  <noscript>
+    <p>This quiz needs JavaScript to reveal questions and answer feedback interactively.</p>
+  </noscript>
+</div>
+```
+
+## Transcript
+
+<details class="transcript-toggle" tabindex="0">
+<summary>Open transcript</summary>
+<div class="transcript-content">
+
+Speaker 1 (Sungyeon): Today, we have the pleasure of having Professor Iman Shames.
+
+Speaker 2 (Rebbecca): Professor Iman Shames is from the School of Engineering at the Australian National University. So, welcome Iman!
+
+Speaker 3 (Iman): Thanks Rebbecca.
+
+Speaker 2: Really happy to have you here in this episode.
+
+Speaker 3: Yeah, I’m happy to be here to have a chat about stuff.
+
+Speaker 1: Wonderful, thank you. Your research interests are pretty broad, covering how we make decisions in uncertain situations, how to control systems efficiently, and even the mathematics behind how complex cyber-physical systems behave. So how did you get interested in those fields?
+
+Speaker 3: Ah it’s the cliché goes that, when you’re little, you just want to figure out how things work out. I think that is cliché post to me too.
+
+Speaker 1: Such a curious spirit.
+
+Speaker 3: Yeah, some explanations never sounded good so I just tried to keep digging. Sometimes I have good explanations, sometimes I don’t. And I rely on people who are smarter than me to tell me what I should understand. So that’s great.
+
+Speaker 2: So you keep digging all the way to control?
+
+Speaker 3: Yeah, I mean control. It’s very unclear what people mean by control these days. I prefer to call it what it was called in the 60s, “automatic control”. It was about understanding feedback. And yeah, feedback is everywhere, and it comes, it pops up in any of the settings that you can think of any ways.
+
+Speaker 2: Yeah. So well, control theory, or like you said, automatic control usually assumes there’s just one controller, right?
+
+Speaker 3: Depends who you ask, but sure, let’s take that, yeah.
+
+Speaker 2: OK, cool then yeah. So if that’s the case, then you have, like, one decision maker calling the shots. So I’ve been wondering what happens when there’s more than one person or system making decisions at the same time.
+
+Speaker 3: Yeah, now going back to the original things. In the 70s, people just started talking about this notion of decentralised control. So there, there are multiple controllers making decisions, and they might have different influences, different parts of the system. And people were really interested in understanding how the interplay works at. In parallel to automatic control field, people in economics were interested in the interplay between different decision makers. And the machinery that they came up with, the mathematical framework, was this notion of game theory. They set up games, and games have players, so they are decision makers. They take actions, and they wanted to understand how these actions really are related to each other. And what does it say about the behaviour of the system? And then those ideas moved to control. Because again, automatic control primarily cares about what happens to systems that evolve across time, so that the system would have dynamics. And a lot of notions that originally well developed in economics, they didn’t have that perspective in place. Over the years, I mean, there are ideas evolved in parallel, so that’s how people in control theory started thinking about what happens if I have dynamics, and what can I say about the system when different decision makers pull and push in different directions?
+
+Speaker 2: Oh OK. So now that you, we kind of touch on game theory, I think that’s something that we’re very interested, that we want to talk about today. So in your own words, can you walk us through this game theory thing?
+
+Speaker 3: Ah, the game theory thing. Do you want to know what people might think when they are talking about game theory or what are the examples of it? Which one are you interested in?
+
+Speaker 2: Well. Or maybe we can start with what actually people think about it. And then after that we can try and, you know, learn about examples.
+
+Speaker 3: Sure. Abstractly, any decision making problem that different people make decisions can be posed as a game problem. You need people, I mean, abstract notions of people, decision makers, which are the players; you need to assign actions to those players, so those players make decisions. And then, when they play a particular move or take a particular action, they receive some payoff depending on their own action and the actions of everyone else who’s playing in the game. So that’s the other element of payoff. You can think of it as money that can be one notion of payoff. It can be also the things. So that’s what the game is. Now why they use the language of game? Because that’s the easiest sort of interactions that people have been doing over many, many, many, many millennia. Okay, yeah. So that’s what it is. That’s what how I think about games in a very, yeah, simple way.
+
+Speaker 1: Right. So yeah, when it comes to games, I feel like there are quite a few different categories that we can talk about, where players are being, say, cooperative or competitive to attain a certain goal in the game setting, right? So can you tell us a bit more about how they differ?
+
+Speaker 3: Yeah. Again, the easiest way of thinking about it is that either the decision makers want to cooperate to achieve something, so the payoff really is strongly coupled with each other, and they improve each other’s payoffs in a way. Or, they might not cooperate with each other so they have their own selfish goals. It doesn’t necessarily mean that their selfish goals will put them at odds with each other, so they don’t necessarily become competitors. But that might be the one depending on the scenario. That can be the action. So you people throw the term “zero-sum games” all around the place. An example of a game that if I win the other player loses is a zero-sum game. But that doesn’t need to be the case in a non-cooperative game.
+
+Speaker 2: I see. So if, like cooperative games, so can we say simple examples, like cleaning up a room together? Is that a cooperative game?
+
+Speaker 3: Yeah, I mean if there are two people who share the same room and then they have to clean their room together, that’s a cooperative game. Now you can you can start modeling now. Maybe one of them is lazy or is more selfish, so they want to do less. Then it moves away from the cooperation to non-cooperation. But that’s yeah, without any of these extra bits, it is in everyone’s interest for the room to be clean. 
+
+Speaker 1: Yeah, but still there can be some lazy people who wouldn’t be cooperating, so it seems like it cannot be really strictly classified into a cooperative game.
+
+Speaker 3: Yeah, it depends! You can put whatever assumption you want in your scenario just now. Maybe you’re interested in saying how much of laziness can you tolerate in a scenario like that, I don’t know.
+
+Speaker 1: Right.
+
+Speaker 2: You mentioned about non-zero-sum games just now, so just wondered is there something called zero-sum games instead?
+
+Speaker 3: Yes, there are. There are zero-sum games. I mean the best example that people think about it. I mean, not the best example that comes to my mind is when you have a penalty shootout in soccer. The keeper wants to save and the penalty taker wants to score, so if one succeeds in their goal, the other one loses. That’s a zero-sum game.
+
+Speaker 2: I see. So I think another example that I can think of is like a chess game. So it’s either “you win, I lose” or …
+
+Speaker 3: Yeah, it’s always like that. Yeah, any of these games that there is a clear disadvantage if one party gains advantage, that’s better become that can be thought of as zero sum.
+
+Speaker 2: I see. I see. Oh okay, that’s pretty interesting. Then how do I imagine non-zero-sum game then? Like what kind of example can I think of?
+
+Speaker 3: Uh. OK, examples of that… For example, if we have financial policy – in macroeconomics, that’s the biggest problem – you’ll have drivers of the fiscal policy. Sorry, the fiscal policy and economic policy, they have different objectives. It doesn’t mean that if the objectives of the fiscal policy makers are going to achieve, the economy is going to crash. It’s just a different equilibria. That’s really, I mean, that’s the most important thing about games – this notion of equilibrium. It is a point that things are poor, poised at the point that the most famous notion of equilibrium is related to John Nash. None of the decision makers can unilaterally improve their payoff if the system is in equilibrium. So it’s an impasse. It’s the point that no one can improve things unilaterally anymore.
+
+Speaker 2: Ohh, I think that’s something we call Nash equilibrium?
+
+Speaker 3: Yeah, that’s exactly what it is. Yeah, it’s due to John Nash. He came up with it.
+
+Speaker 1: That’s right, a mathematician who’s featured in a famous movie “A Beautiful Mind”, right? Yeah.
+
+Speaker 2: Ohh OK. Never watched that movie before. 
+
+Speaker 3: Yeah, yeah, maybe you should.
+
+Speaker 2: Yeah, maybe I should after this. OK, cool. Uhm, all right. But I’m just thinking of this non-zero-sum game again, would you say like a group project in, say, in a university or school setting, when we have a group like, say Sungyeon and I, we’re doing a group project, will that be like a nno-zero-sum game? 
+
+Speaker 3: Yeah.
+
+Speaker 2: We’re sort of like you know we have the same goal. If I get A, she gets A too. If I fail, she might fail too.
+
+Speaker 3: But you might want to do less and still get A. So that’s exactly what it is. That’s how you model these sort of interactions – that’s another example.
+
+Speaker 2: Well, I guess that’s perfect for me. I do less and I get an A. Wow. Well thanks Sungyeon.
+
+Speaker 1: Well, that’s a strategy.
+
+Speaker 3: Yeah, that’s a strategy. And if you push it, then maybe the next time you won’t have a group member. 
+
+Speaker 1: You’re out.
+
+Speaker 2: Yes. Ohh I have to be careful, so I guess OK. Alright in that sense. What else can we actually uhm dig into this game theory thing?
+
+Speaker 3: Oh, I mean, it never ends. One aspect that is interesting is usually when people think about games, they assume that everyone knows everything about all the other players, all the payoffs, everything, all the time.
+
+Speaker 2: OK.
+
+Speaker 3: But things become really complicated at the moment that you say. Not. Not everything is known to all the players about the other players’ preferences, for instance, or about the other players’ actions really. And this comes to this category of – if there are two players, I might not know anything about the other player, but I know something about their actions.
+
+Speaker 1: Partially know.
+
+Speaker 3: Partially know. Yeah. The other player knows that I don’t know anything. They might not know anything about my full actions all the time, but they know that I know something about them. So they know that I know, but I go back to me and I know that they know that I know.
+
+Speaker 2: OK.
+
+Speaker 3: So this this goes to a regression to infinity.
+
+Speaker 2: Yes.
+
+Speaker 3: I know that they know, and they know that I know, and it becomes a bit absurd, but that’s what it is. I mean, some people call it the regression of belief orders to infinity.
+
+Speaker 2: I see.
+
+Speaker 3: And untangling it is a mess. The work of one person that helped with this disentanglement is John Harsanyi.
+
+Speaker 1: Ah-ha.
+
+Speaker 3: He came up with this order of beliefs, hierarchy of beliefs, and then people took them another 30 years to really formalise those ideas. And the point was that at some stage maybe there is a belief order that all the other following beliefs are included in it, so you don’t gain anything and that’s intuitively that makes sense. As we go back and forth, it becomes – the information in this sort of back and forth – it disappears. So at some stage, it doesn’t matter, you can fix your belief order and make decisions under that belief order from that point on.
+
+Speaker 1: So belief order is a kind of a set of conditions in playing a game.
+
+Speaker 3: Belief order is really is not the condition in the game. But it is the condition of the set-up of the game.
+
+Speaker 1: Set-up, right.
+
+Speaker 3: Yeah. What sort of information can be? It’s like a nested structures of information. At some stage, there is nothing to be gained by going up this hierarchy of belief.
+
+Speaker 1: Right. So going back to an example where two players are playing a game and they are partially aware of what the other player is thinking about.
+
+Speaker 3: So good. Maybe. Let’s construct this example. I’m doing it off the cuff now. Imagine we were playing hide and seek.
+
+Speaker 1: Sure.
+
+Speaker 1: Uh, yeah.
+
+Speaker 3: In the hide and seek, let’s assume that we know – I mean the classical one – we know that one player starts and then the other player goes and hide. Right. But we really never – the player who’s hiding… Let’s play on this variant – that they can change the location.
+
+Speaker 2: OK.
+
+Speaker 3: They never exactly know where the seeker is, because if they knew it, they could always move away. If they’re fast enough, they never could be found. Now the hider might hear things every now and then, so that’s the partial information about the location of the other player.
+
+Speaker 1: I see.
+
+Speaker 3: So now what do they do? They can try to build this model of their motion and try to always be one step ahead. Or they can engage in other bits of the game because the other player doesn’t know where the hider is either, so they can make noises just to throw off the seat here from this mouth. SoDthey have two choices to really follow. Do they try to stick to the hiding and being one step ahead or try to convince the seeker that they have to go somewhere else. So that’s that becomes the question. Now if the seeker knows that these two options are available, they might not pay attention to a sound because they might think it is just, it’s, not true. But now the other the hider is going to say, oh, I know that the seeker is going to think like that, so I’m going to make a noise, and I’m going to follow that noise that I made intentionally. So that really leads to this regression to infinity.
+
+Speaker 1: Uh-huh.
+
+Speaker 2: Right. In that way, I guess this hide and seek game won’t actually ever ends and continues forever.
+
+Speaker 3: If yeah, but that’s all of these conditions as well. I mean, if both players are as agile as each other, there might be cases you can construct cases that never end.
+
+Speaker 1: OK, yeah. Would there be… So you mentioned about the mathematician John Harsanyi. So what was the impact after establishing belief ordering?
+
+Speaker 3: John Harsanyi won what is known as the Nobel Prize in Economics – which is this full title, is much longer than that. So he, yeah, he got that. And he has connections with ANU as well. I don’t know if we want to talk about it or not.
+
+Speaker 2: Yeah, sure!
+
+Speaker 3: Yeah. He was a refugee from Hungary, moved to Australia. He was a pharmacist and a philosopher by training. He moved to Australia, but they didn’t acknowledge his prior education, so he did a degree in Chemical Engineering in the University of Sydney. For postgraduate studies, he came to ANU. And he got involved in the early game theory activities with Kuhn in Berkeley. And one reason or another, they didn’t give him a job at ANU, so he moved to Berkeley, and that’s where he got his Nobel Prize, yeah.
+
+Speaker 1: Ah, that’s a shame.
+
+Speaker 2: Oh, OK well, that’s nice about John Harsanyi, and I just realised it’s John all the way. I guess Nash is also John Nash. 
+
+Speaker 1: That’s right.
+
+Speaker 3: Yeah. But that’s the most common name.
+
+Speaker 1: Or maybe we should name ourselves John to be greater. Yeah.
+
+Speaker 2: Well, this game theory thing, I’ve heard something about inverse games. Is it just literally the inverse of what we just talked about?
+
+Speaker 3: Inverse in a mathematical sense, yes. It’s the question if you can observe decision making making decision: Can you reverse engineer the payoffs and the action space? So can you really reconstruct the game that they’re actually playing? Maybe they even are not aware of playing that particular game. But you can always start building your model, and this really goes back to the question of model to make sense of interactions, be reliable models. That’s the question of inverse game. You observe multiple decision making doing stuff, and then you go and want to reverse engineer what is the underlying game structure. 
+
+Speaker 1: Right. So where will it be useful to use that?
+
+Speaker 3: It’s really about making sense of things, explaining things. I mean, one possibility, you can observe… For example, one way of thinking of this is a thought experiment: there are a bunch of people are in a room with multiple exits, different starting positions of people. And you asked them to evacuate the room.
+
+Speaker 1: All of a sudden?
+
+Speaker 3: Yeah, all of a sudden in an emergency scenario. They have choices about which doors they are going to pick? Maybe they pick the doors that are closer to them, or whatever. At the same time, when they’re leaving, they have ideally hope that they don’t want to stampede as well, so they avoid getting too close to other people. And then you can observe this and say, hmm, it seems that they’re playing a game, and they have payoffs: they want to get out, and they don’t want to be too close to each other because then they stampede.
+
+Then you can try to build these sort of payoffs that they might have in their mind implicitly. Obviously people who are running away out of the room, they never solve any mathematical problem. They just want to get at. But there are these things that are engrained in them.
+
+Speaker 2: Yeah, they just want to survive. They just want to rush out.
+
+Speaker 1: Exactly.
+
+Speaker 3: And then that might be helpful in designing buildings and rooms, so that some property that you’re interested in is guaranteed. So this is sort of… It just makes sense of things. The other way of thinking about it is: Imagine you want to deploy a whole bunch of robots coworkers with human coworkers, and you don’t want to freak the human workers out. So you, ideally you want the robots to choose certain paths that is more consistent with how other people would do it. So you observe workers in an environment, and then you learn how to really reverse engineer – solve the inverse game – to find these sort of policies, strategies, and payoffs for the robots that you’re going to deploy later in that particular environment. This really allows us to have a human-machine interaction that is again under some measure consistent with what people would have interacted with each other.
+
+Speaker 1: Right. So it sounds like inverse schemes can be very useful in designing and planning a certain type of route or network.
+
+Speaker 3: Really. Interactions. Yeah. I mean, network is a way of modeling interactions.
+
+Speaker 1: Yeah, right. Awesome. Yeah. Thanks so much for such a rich conversation. I think we all can now view a lot of situations arising in our life in the context of games. So it’s really wonderful to know how we make decisions and come up with strategies to maximise benefits while minimizing risks based on our assumptions of what others might be thinking. So, thanks a lot again for your time!
+
+Speaker 3: Thanks for having me. 
+
+Speaker 2: Well, thanks.
+ 
+</div>
+</details>
+
+:::

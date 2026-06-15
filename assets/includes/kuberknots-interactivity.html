@@ -1,0 +1,192 @@
+<button class="kk-back-to-top" id="kk-back-to-top" type="button" aria-label="Move to top" title="Move to top" style="--kk-back-to-top-bottom: clamp(5rem, 9vw, 5rem);">
+  <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+  <span class="visually-hidden">Move to top</span>
+</button>
+
+<script>
+(function () {
+  function onReady(callback) {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", callback);
+    } else {
+      callback();
+    }
+  }
+
+  function setupBackToTop() {
+    const button = document.getElementById("kk-back-to-top");
+    if (!button) return;
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    function updateVisibility() {
+      if (window.scrollY > 420) {
+        button.classList.add("is-visible");
+      } else {
+        button.classList.remove("is-visible");
+      }
+    }
+
+    button.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: prefersReducedMotion.matches ? "auto" : "smooth"
+      });
+    });
+
+    updateVisibility();
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+  }
+
+  function setupTranscriptToggles() {
+    const detailsBlocks = document.querySelectorAll("details");
+
+    detailsBlocks.forEach(function (details) {
+      const summary = details.querySelector("summary");
+      const summaryText = summary ? summary.textContent.toLowerCase() : "";
+      const isTranscript = details.classList.contains("transcript-toggle") || summaryText.includes("transcript");
+
+      if (!isTranscript || details.dataset.clickAnywhereReady === "true") return;
+
+      details.classList.add("transcript-toggle");
+      details.dataset.clickAnywhereReady = "true";
+
+      if (!details.hasAttribute("tabindex")) {
+        details.setAttribute("tabindex", "0");
+      }
+
+      details.addEventListener("click", function (event) {
+        if (!(event.target instanceof Element)) return;
+
+        const interactiveElement = event.target.closest("summary, a, button, input, textarea, select, label, audio, video");
+        if (interactiveElement) return;
+
+        details.open = !details.open;
+        event.preventDefault();
+      });
+
+      details.addEventListener("keydown", function (event) {
+        if (event.target !== details) return;
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          details.open = !details.open;
+        }
+      });
+    });
+  }
+
+  function setupInteractiveQuizzes() {
+    document.querySelectorAll(".interactive-quiz").forEach(function (quiz) {
+      if (quiz.dataset.quizReady === "true") return;
+
+      const dataElement = quiz.querySelector(".quiz-data");
+      const stage = quiz.querySelector(".quiz-stage");
+      if (!dataElement || !stage) return;
+
+      let questions;
+      try {
+        questions = JSON.parse(dataElement.textContent);
+      } catch (error) {
+        stage.textContent = "The quiz could not be loaded. Please check the quiz JSON.";
+        return;
+      }
+
+      if (!Array.isArray(questions) || questions.length === 0) return;
+
+      quiz.dataset.quizReady = "true";
+      let currentIndex = 0;
+
+      function renderQuestion() {
+        const question = questions[currentIndex];
+        stage.innerHTML = "";
+
+        const progress = document.createElement("p");
+        progress.className = "quiz-progress";
+        progress.textContent = "Question " + (currentIndex + 1) + " of " + questions.length;
+        stage.appendChild(progress);
+
+        const heading = document.createElement("h3");
+        heading.className = "quiz-question";
+        heading.textContent = question.question;
+        stage.appendChild(heading);
+
+        const options = document.createElement("div");
+        options.className = "quiz-options";
+        options.setAttribute("role", "list");
+        stage.appendChild(options);
+
+        const feedback = document.createElement("p");
+        feedback.className = "quiz-feedback";
+        feedback.setAttribute("role", "status");
+        feedback.setAttribute("aria-live", "polite");
+
+        const controls = document.createElement("div");
+        controls.className = "quiz-controls";
+
+        question.options.forEach(function (option, optionIndex) {
+          const button = document.createElement("button");
+          button.className = "quiz-option";
+          button.type = "button";
+          button.textContent = option.text;
+          button.addEventListener("click", function () {
+            handleAnswer(optionIndex, question, options, feedback, controls);
+          });
+          options.appendChild(button);
+        });
+
+        stage.appendChild(feedback);
+        stage.appendChild(controls);
+      }
+
+      function handleAnswer(selectedIndex, question, optionsContainer, feedback, controls) {
+        const buttons = Array.from(optionsContainer.querySelectorAll(".quiz-option"));
+        const selected = question.options[selectedIndex];
+        const correctIndex = question.options.findIndex(function (option) {
+          return option.correct === true;
+        });
+        const correct = question.options[correctIndex];
+
+        buttons.forEach(function (button, index) {
+          button.disabled = true;
+          button.setAttribute("aria-disabled", "true");
+
+          if (index === correctIndex) {
+            button.classList.add("is-correct");
+          }
+          if (index === selectedIndex && selected.correct !== true) {
+            button.classList.add("is-incorrect");
+          }
+        });
+
+        const feedbackPrefix = selected.correct ? "" : "Not quite.";
+        const feedbackText = selected.feedback || (selected.correct ? "That is the best answer." : "The highlighted answer is the best fit.");
+        const correctText = selected.correct ? "" : " Correct answer: " + correct.text;
+        feedback.textContent = feedbackPrefix + " " + feedbackText + correctText;
+
+        controls.innerHTML = "";
+        const nextButton = document.createElement("button");
+        nextButton.type = "button";
+        nextButton.className = "quiz-next";
+        nextButton.textContent = currentIndex < questions.length - 1 ? "Next question" : "Restart quiz";
+        nextButton.addEventListener("click", function () {
+          if (currentIndex < questions.length - 1) {
+            currentIndex += 1;
+          } else {
+            currentIndex = 0;
+          }
+          renderQuestion();
+        });
+        controls.appendChild(nextButton);
+      }
+
+      renderQuestion();
+    });
+  }
+
+  onReady(function () {
+    setupBackToTop();
+    setupTranscriptToggles();
+    setupInteractiveQuizzes();
+  });
+})();
+</script>

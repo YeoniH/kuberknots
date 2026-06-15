@@ -1,0 +1,29 @@
+---
+title: ""
+comments: false
+---
+
+::: {.page-heading}
+<p class="eyebrow">Contact</p>
+
+# Share your thoughts
+
+Use the form below for comments, questions, corrections, guest suggestions, or ideas for future episodes. To keep submissions accountable, we encourage you to use the Google Form below with a verified email address.
+:::
+
+
+```{=html}
+<div class="form-embed" aria-label="Kuberknots contact form">
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSeBsyWaolSmRR62PDdG-9ykDUG16SrN53l02Oj2EXUYU9oT4w/viewform?embedded=true"
+    title="Kuberknots contact form"
+    loading="lazy">
+    Loading…
+  </iframe>
+</div>
+```
+
+::: {.callout-knot}
+**Privacy placeholder:**  
+[Add a short note explaining who can access responses, how long you retain them, whether selected questions may be quoted in future episodes, and how listeners can request deletion.]
+:::

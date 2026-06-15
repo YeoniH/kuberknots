@@ -1,0 +1,75 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Kuberknots"
+  site-url: "https://YOUR-GITHUB-USERNAME.github.io/kuberknots/"
+  favicon: assets/img/kuberknots-logo.png
+  repo-url: "https://github.com/YOUR-GITHUB-USERNAME/kuberknots"
+  navbar:
+    title: false
+    logo: assets/img/kuberknots-logo.png
+    logo-alt: "Kuberknots logo"
+    logo-href: index.qmd
+    pinned: true
+    search: true
+    collapse-below: lg
+    right:
+      - text: "About"
+        href: about.qmd
+      - text: "Episodes"
+        href: episodes.qmd
+      - text: "Contact"
+        href: contact.qmd
+  page-footer:
+    left: |
+      **Kuberknots | Voyage into Cybernetics**  
+      A podcast exploring cybernetics — all about communication, control, and complex systems — through accessible expert conversations.
+    center: |
+      <div class="supporter-logos" aria-label="Kuberknots supporters">
+      **Supported by**
+        <a class="supporter-logo-link" href="http://cybernetics.anu.edu.au/" aria-label="ANU School of Cybernetics">
+          <img class="supporter-logo" src="/assets/img/logo_anu-socy.png" height=40px alt="ANU School of Cybernetics logo">
+        </a>
+        <a class="supporter-logo-link" href="https://www.ieeesmc.org/" aria-label="IEEE Systems, Man and Cybernetics Society">
+          <img class="supporter-logo" src="/assets/img/logo_ieee-smc.jpg" height=40px alt="IEEE Systems, Man and Cybernetics Society logo">
+        </a>
+      </div>
+    right:
+      - icon: youtube
+        href: "https://www.youtube.com/@Kuberknots"
+        aria-label: "Kuberknots on YouTube"
+        target: "_blank"
+        rel: "noopener noreferrer"
+      - icon: spotify
+        href: "https://open.spotify.com/show/4P1quzGHiM1mXM653Bmk1i"
+        aria-label: "Kuberknots on Spotify"
+        target: "_blank"
+        rel: "noopener noreferrer"
+      - icon: linkedin
+        href: "https://www.linkedin.com/company/kuberknots/"
+        aria-label: "Kuberknots on LinkedIn"
+        target: "_blank"
+        rel: "noopener noreferrer"
+        
+    background: light
+
+    border: true
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+      - styles-additions.scss
+    toc: false
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-icon: false
+    link-external-newwindow: true
+    page-layout: full
+    include-after-body: assets/includes/kuberknots-interactivity.html
+
+execute:
+  freeze: auto

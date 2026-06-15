@@ -1,0 +1,165 @@
+---
+title: "Replace with episode title"
+subtitle: "One-sentence summary for cards, search, and previews."
+date: "YYYY-MM-DD"
+image: "../assets/img/episodes/ep-XXX.png"
+categories: [Season 2, topic one, topic two]
+comments: false
+# Keep the YAML fields above for Quarto listings, search, previews, and metadata.
+# The visible title block is hidden below so the episode page shows the title only inside .episode-shell.
+---
+
+```{=html}
+<style>
+/* Hide Quarto's automatically generated title/subtitle/date block on episode pages. */
+#title-block-header,
+.quarto-title-block {
+  display: none;
+}
+</style>
+```
+
+::: {.episode-shell}
+::: {.episode-hero}
+
+::: {.episode-meta aria-label="Episode information"}
+<span class="episode-number">Season 2 · Episode XX</span>
+<span class="episode-date">YYYY-MM-DD</span>
+:::
+
+# Replace with episode title
+
+<p class="episode-subtitle">One-sentence summary for cards, search, and previews.</p>
+
+::: {.episode-categories aria-label="Episode categories"}
+<span class="episode-category">Season 2</span>
+<span class="episode-category">topic one</span>
+<span class="episode-category">topic two</span>
+:::
+
+Write a short, listener-facing paragraph that explains the episode hook, the guest, and the main idea. Aim for two or three sentences.
+
+::: {.audio-card}
+## Listen
+
+```{=html}
+<div class="spotify-player">
+  <iframe
+    src="https://open.spotify.com/embed/episode/REPLACE_WITH_SPOTIFY_EPISODE_ID"
+    width="100%"
+    height="152"
+    frameborder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+  </iframe>
+</div>
+
+<div class="listen-links" aria-label="Listen to this episode on external platforms">
+
+  <a class="listen-icon-link" href="REPLACE_WITH_SPOTIFY_EPISODE_URL" target="_blank" rel="noopener noreferrer" aria-label="Listen on Spotify">
+    <i class="bi bi-spotify" aria-hidden="true"></i>
+    <span class="visually-hidden">Spotify</span>
+  </a>
+  
+  <a class="listen-icon-link" href="REPLACE_WITH_YOUTUBE_EPISODE_URL" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+    <i class="bi bi-youtube" aria-hidden="true"></i>
+    <span class="visually-hidden">YouTube</span>
+  </a>
+  
+</div>
+```
+:::
+:::
+
+## Guest speaker
+
+::: {.speaker-card}
+::: {.speaker-photo}
+![](../assets/img/speaker.jpg){fig-alt="portrait-speaker"}
+:::
+
+::: {.speaker-bio}
+### Guest name
+
+Add a short speaker bio. Keep the first paragraph concise: current role, field, and why their work matters for the episode topic. Add links only when useful.
+:::
+:::
+
+## Quick quiz
+
+```{=html}
+<div class="quiz-card interactive-quiz">
+  <div class="quiz-stage" aria-live="polite"></div>
+  <script type="application/json" class="quiz-data">
+  [
+    {
+      "question": "Replace with question 1.",
+      "options": [
+        {
+          "text": "Incorrect option A.",
+          "correct": false,
+          "feedback": "Briefly explain why this is not the best answer."
+        },
+        {
+          "text": "Correct option.",
+          "correct": true,
+          "feedback": "Briefly reinforce the key idea."
+        },
+        {
+          "text": "Incorrect option B.",
+          "correct": false,
+          "feedback": "Briefly explain the misconception."
+        },
+        {
+          "text": "Incorrect option C.",
+          "correct": false,
+          "feedback": "Briefly explain the misconception."
+        }
+      ]
+    },
+    {
+      "question": "Replace with question 2.",
+      "options": [
+        {
+          "text": "Incorrect option A.",
+          "correct": false,
+          "feedback": "Briefly explain why this is not the best answer."
+        },
+        {
+          "text": "Incorrect option B.",
+          "correct": false,
+          "feedback": "Briefly explain the misconception."
+        },
+        {
+          "text": "Correct option.",
+          "correct": true,
+          "feedback": "Briefly reinforce the key idea."
+        },
+        {
+          "text": "Incorrect option C.",
+          "correct": false,
+          "feedback": "Briefly explain the misconception."
+        }
+      ]
+    }
+  ]
+  </script>
+  <noscript>
+    <p>This quiz needs JavaScript to reveal questions and answer feedback interactively.</p>
+  </noscript>
+</div>
+```
+
+## Transcript
+
+<details class="transcript-toggle" tabindex="0">
+<summary>Open transcript</summary>
+<div class="transcript-content">
+00:00:00 Speaker 1
+
+Paste transcript here.
+</div>
+</details>
+
+:::
