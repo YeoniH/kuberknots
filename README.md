@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-# Kuberknots
-=======
 # Kuberknots Quarto starter
 
-This starter pack gives you a Quarto/GitHub Pages structure for the redesigned Kuberknots website.
+
 
 ## Files
 
@@ -39,4 +36,3 @@ quarto render
 ```
 
 This project uses `output-dir: docs`, so GitHub Pages can serve from the `docs/` folder if you prefer that workflow.
->>>>>>> 00216dc (Initial commit for Kuberknots website)

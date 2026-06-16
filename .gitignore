@@ -2,3 +2,7 @@ _site/
 .quarto/
 .Rproj.user/
 .DS_Store
+_templates
+
+/.quarto/
+**/*.quarto_ipynb

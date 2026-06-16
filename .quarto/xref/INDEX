@@ -1,41 +1,32 @@
 {
   "episodes/ep-005.qmd": {
-    "ep-005.html": "afbfc8e0"
+    "ep-005.html": "c54a9cb1"
   },
   "episodes/ep-003.qmd": {
-    "ep-003.html": "c7f4ba16"
+    "ep-003.html": "1c7921ed"
   },
   "episodes/ep-001.qmd": {
-    "ep-001.html": "59038ebd"
+    "ep-001.html": "b7fac3f5"
   },
   "episodes/ep-006.qmd": {
-    "ep-006.html": "f8bd29d7"
+    "ep-006.html": "caa537cd"
   },
   "episodes/ep-004.qmd": {
-    "ep-004.html": "38f1d339"
+    "ep-004.html": "88574511"
   },
   "episodes/ep-002.qmd": {
-    "ep-002.html": "2872fa01"
+    "ep-002.html": "33adcaa4"
   },
   "episodes.qmd": {
-    "episodes.html": "21d177c5"
+    "episodes.html": "256e536a"
   },
   "index.qmd": {
-    "index.html": "aab0eb2b"
+    "index.html": "4ade6357"
   },
   "about.qmd": {
-    "about.html": "fd5329e7"
+    "about.html": "d8445c36"
   },
   "contact.qmd": {
-    "contact.html": "aae81b71"
-  },
-  "about_v1.qmd": {
-    "about_v1.html": "52451870"
-  },
-  "ep-000.qmd": {
-    "ep-000.html": "3dec36a0"
-  },
-  "episodes/ep-000.qmd": {
-    "ep-000.html": "793c3255"
+    "contact.html": "411b6eaf"
   }
 }

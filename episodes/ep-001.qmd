@@ -72,7 +72,7 @@ Associate Professor Matthew Holt is Deputy Director and Applied Cybernetics Lead
 		  "question": "The word cybernetics comes from the Greek word kybernḗtēs. What does kybernḗtēs mean?",
 		  "options": [
 		    {
-		      "text": "Steersman / Pilot",
+		      "text": "Steersman",
 		      "correct": true,
 		      "feedback": "Correct! Kybernḗtēs means 'steersman' or 'pilot'—someone who guides a ship. This idea of steering became a central metaphor in cybernetics."
 		    },
