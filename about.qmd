@@ -12,9 +12,11 @@ Kuberknots is a podcast for listeners who are curious about cybernetics, control
 
 ## Why cybernetics?
 
-Cybernetics offers a language for noticing that the world is not made of isolated parts, but of relationships, signals, feedback loops, and changing environments. It helps us see interconnectedness: a city’s transport, energy, housing, weather, and social rhythms shape one another, so a change in one place can ripple through the whole. It also helps us ask how systems optimise their structures for better function: a thermostat adjusts heating, an immune system reallocates resources, and a traffic network retimes signals to keep movement within workable limits.
+Cybernetics offers a language for noticing that the world is not made of isolated parts, but of <b>relationships</b>, <b>signals</b>, <b>feedback loops</b>, and <b>changing environments</b>. It helps us see <i>interconnectedness</i>: a city’s transport, energy, housing, weather, and social rhythms shape one another, so a change in one place can ripple through the whole. It also helps us ask how systems optimise their structures for better function: a thermostat adjusts heating, an immune system reallocates resources, and a traffic network retimes signals to keep movement within workable limits.
 
-Cybernetics is equally useful for thinking about resilience. Robust systems do not simply avoid disturbance; they sense noise, compare it with what matters, and adapt. A power grid rerouting around a fault, a robot filtering noisy sensor data, or a community reorganising after a flood all show communication and control under pressure. As systems scale, cybernetics also draws attention to emergence: ant colonies build trails without a central planner, online communities produce trends no single user designed, and many local decisions in a market can create patterns that feel larger than any individual actor.
+Cybernetics is equally useful for thinking about <b>resilience</b>. Robust systems do not simply avoid disturbance; they sense noise, compare it with what matters, and adapt. A power grid rerouting around a fault, a robot filtering noisy sensor data, or a community reorganising after a flood all show <b>communication and control under pressure and perturbations</b>.
+
+As systems scale, cybernetics also draws attention to <b>emergence</b>: ant colonies build trails without a central planner, online communities produce trends no single user designed, and many local decisions in a market can create patterns that feel larger than any individual actor.
 
 Sound familiar? You are all ready to embark on a journey with us!
 :::
@@ -39,7 +41,7 @@ _Kuberknots_ weaves two ideas together: “kuber-” comes from the Greek word, 
 :::
 :::
 
-
+<!--
 ::: {.section-heading}
 ## Editorial values
 :::
@@ -58,12 +60,12 @@ Invite experts to explain not only what they study, but how they came to care ab
 :::
 
 ::: {.value-card}
-### Precise
+### Friendly
 
 Keep the explanations friendly while respecting the technical meaning of core concepts.
 :::
 :::
-
+-->
 
 ::: {.section-heading .host-heading}
 ## Host
@@ -76,9 +78,9 @@ Sungyeon became fascinated by cybernetics as a unifying language for making sens
 ::: {.callout-knot}
 ## Credits and supporters
 
-We acknowledge the generous support of [ANU School of Cybernetics](http://cybernetics.anu.edu.au/) and the [IEEE Systems, Man and Cybernetics Society](https://www.ieeesmc.org/) for Kuberknots since 2025.
+We acknowledge the generous support of the [ANU School of Cybernetics](http://cybernetics.anu.edu.au/) and the [IEEE Systems, Man and Cybernetics Society](https://www.ieeesmc.org/) for Kuberknots since 2025.
 
-Kuberknots Season 1 was co-hosted by Sungyeon and Rebbecca. Rebbecca, a control theorist with deep experience in control-related research, helped shape the early conversations and brought clarity, technical insight, and enthusiasm to the project. We gratefully acknowledge her contribution to Season 1 and the foundation she helped build.
+Kuberknots Season 1 was co-hosted by Sungyeon Hong and Rebbecca TY Thien. Rebbecca, a control theorist with deep experience in control-related research, helped shape the early conversations and brought clarity, technical insight, and enthusiasm to the project. We gratefully acknowledge her contribution to Season 1 and the foundation she helped build.
 
-The content in our recordings is intended for educational and informational purposes only. All rights to the music used belong to Suno AI. All drawings featured are original works produced in-house unless stated otherwise.
+The content in our recordings is intended for educational and informational purposes only. All rights to the music used belong to Suno AI. All drawings featured are original works produced in-house by Sungyeon unless stated otherwise.
 :::

@@ -23,7 +23,9 @@ Use the form below for comments, questions, corrections, guest suggestions, or i
 </div>
 ```
 
+<!--
 ::: {.callout-knot}
 **Privacy placeholder:**  
 [Add a short note explaining who can access responses, how long you retain them, whether selected questions may be quoted in future episodes, and how listeners can request deletion.]
 :::
+-->

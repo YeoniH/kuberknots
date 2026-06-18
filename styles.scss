@@ -283,6 +283,14 @@ summary:focus-visible {
   padding: 0.38rem 0.7rem;
 }
 
+.supporter-logos img {
+	height: 60px;
+  vertical-align: center;
+	border: 5px solid #FFFFFF;
+	border-radius: 6px;
+}
+
+
 .page-heading {
   max-width: 1180px;
   margin: 0 auto;
@@ -369,8 +377,10 @@ summary {
 .nav-footer .supporter-chip {
   background: rgba(255, 154, 0, 0.18);
   border-color: rgba(255, 211, 140, 0.45);
+  border: #FFFFFF;
+  border-radius: 12px;
   color: #fff7ec;
-  margin: 0.15rem;
+  margin: 0.35rem;
 }
 
 .site-disclaimer {
