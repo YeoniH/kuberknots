@@ -70,7 +70,7 @@ Keep the explanations friendly while respecting the technical meaning of core co
 ::: {.section-heading .host-heading}
 ## Host
 
-Season 2 is hosted by Sungyeon Hong, continuing the Kuberknots voyage with curiosity, playfulness, and a focus on cybernetics as a language for tying ideas together.
+Season 2 is hosted by [Sungyeon Hong](sungyeon-hong.github.io), continuing the Kuberknots voyage with curiosity, playfulness, and a focus on cybernetics as a language for tying ideas together.
 
 Sungyeon became fascinated by cybernetics as a unifying language for making sense of patterns across humans and machines, society and technology. Through Kuberknots, she invites listeners to explore the art of communication and control: how systems sense, respond, learn, adapt, and sometimes surprise us.
 :::
