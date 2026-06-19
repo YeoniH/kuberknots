@@ -15,6 +15,6 @@ listing:
 
 # Choose a knot to untangle.
 
-Each episode page is designed as a learning space: audio first, then speaker context, transcript, concepts, quiz, and an optional moderated route for comments or questions.
+In each episode page, you can find links to audio, speaker bio, transcript, and quiz. 
 :::
 

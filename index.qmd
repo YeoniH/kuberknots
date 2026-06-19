@@ -35,7 +35,7 @@ Check out our recent episodes or browse around for further exploration!
 
 ::: {.latest-grid}
 ::: {.episode-card}
-![](assets/img/episode-placeholder.svg){.episode-thumb}
+![](assets/img/ep6_paolo){.episode-thumb}
 
 <p class="episode-meta">Episode 6</p>
 
@@ -47,7 +47,7 @@ Paolo Scarabaggio explains smart energy systems through multi-agent systems, ene
 :::
 
 ::: {.episode-card}
-![](assets/img/episode-placeholder.svg){.episode-thumb}
+![](assets/img/ep5_iman.png){.episode-thumb}
 
 <p class="episode-meta">Episode 5</p>
 
@@ -59,7 +59,7 @@ Iman Shames introduces game theory, Nash equilibrium, belief hierarchies, and ev
 :::
 
 ::: {.episode-card}
-![](assets/img/episode-placeholder.svg){.episode-thumb}
+![](assets/img/ep4_ian.png){.episode-thumb}
 
 <p class="episode-meta">Episode 4</p>
 

@@ -2,7 +2,7 @@
 title: "Cybernetics and its Origins"
 subtitle: "Matthew Holt traces the origins of cybernetics and how it has shaped ideas of feedback, regulation, and autonomy."
 date: "2025-06-30"
-image: "../assets/img/episode-placeholder.svg"
+image: "../assets/img/ep1_matt.png"
 categories: [Season 1, cybernetics, history, feedback]
 comments: false
 ---

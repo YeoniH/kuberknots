@@ -61,7 +61,6 @@ format:
     theme:
       - cosmo
       - styles.scss
-      - styles-additions.scss
     toc: false
     smooth-scroll: true
     anchor-sections: true

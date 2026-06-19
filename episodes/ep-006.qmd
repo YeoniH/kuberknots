@@ -2,7 +2,7 @@
 title: "How Cemeteries and Solar Panels Explain Modern Energy Systems"
 subtitle: "Paolo Scarabaggio explains smart energy systems through multi-agent systems, energy communities, solar panels, and fairness."
 date: "2025-11-13"
-image: "../assets/img/episode-placeholder.svg"
+image: "../assets/img/ep6_paolo.png"
 categories: [Season 1, energy, multi-agent, fairness]
 comments: false
 ---

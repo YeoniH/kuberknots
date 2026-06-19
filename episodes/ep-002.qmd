@@ -2,7 +2,7 @@
 title: "Cybernetics and Control"
 subtitle: "Jochen Trumpf introduces the fundamentals of control through science, engineering, and mathematics."
 date: "2025-07-31"
-image: "../assets/img/episode-placeholder.svg"
+image: "../assets/img/ep2_jochen.png"
 categories: [Season 1, control theory, engineering, systems]
 comments: false
 ---
