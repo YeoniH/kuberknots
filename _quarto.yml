@@ -4,9 +4,9 @@ project:
 
 website:
   title: "Kuberknots"
-  site-url: "https://YOUR-GITHUB-USERNAME.github.io/kuberknots/"
+  site-url: "https://kuberknots.com/"
   favicon: assets/img/kuberknots-logo.png
-  repo-url: "https://github.com/YOUR-GITHUB-USERNAME/kuberknots"
+  repo-url: "https://github.com/YeoniH/kuberknots"
   navbar:
     title: "Kuberknots | Voyage into Cybernetics"
     logo: assets/img/kuberknots-logo.png
