@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://YOUR-GITHUB-USERNAME.github.io/kuberknots/about.html</loc>
-    <lastmod>2026-06-18T08:33:47.901Z</lastmod>
+    <loc>https://YOUR-GITHUB-USERNAME.github.io/kuberknots/contact.html</loc>
+    <lastmod>2026-06-18T01:20:46.476Z</lastmod>
   </url>
   <url>
     <loc>https://YOUR-GITHUB-USERNAME.github.io/kuberknots/index.html</loc>
     <lastmod>2026-06-19T12:05:45.911Z</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR-GITHUB-USERNAME.github.io/kuberknots/episodes/ep-003.html</loc>
-    <lastmod>2026-06-19T11:51:42.862Z</lastmod>
   </url>
   <url>
     <loc>https://YOUR-GITHUB-USERNAME.github.io/kuberknots/episodes/ep-002.html</loc>
@@ -21,8 +17,8 @@
     <lastmod>2026-06-19T12:06:08.579Z</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-GITHUB-USERNAME.github.io/kuberknots/contact.html</loc>
-    <lastmod>2026-06-18T08:32:34.788Z</lastmod>
+    <loc>https://YOUR-GITHUB-USERNAME.github.io/kuberknots/episodes/ep-003.html</loc>
+    <lastmod>2026-06-19T11:51:42.862Z</lastmod>
   </url>
   <url>
     <loc>https://YOUR-GITHUB-USERNAME.github.io/kuberknots/episodes/ep-005.html</loc>
@@ -39,5 +35,9 @@
   <url>
     <loc>https://YOUR-GITHUB-USERNAME.github.io/kuberknots/episodes.html</loc>
     <lastmod>2026-06-19T10:57:05.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR-GITHUB-USERNAME.github.io/kuberknots/about.html</loc>
+    <lastmod>2026-06-19T09:40:59.320Z</lastmod>
   </url>
 </urlset>

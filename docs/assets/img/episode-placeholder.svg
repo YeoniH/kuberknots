@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-  <title id="title">Kuberknots episode artwork placeholder</title>
-  <desc id="desc">Warm cream background with red knot line and orange star.</desc>
-  <rect width="1200" height="675" fill="#fff7ec"/>
-  <path d="M160 500 C320 260, 480 260, 620 430 S910 620, 1040 340" fill="none" stroke="#ff1a00" stroke-width="42" stroke-linecap="round"/>
-  <path d="M210 130 L370 130 L290 270 Z" fill="#ff9a00"/>
-  <path d="M875 140 L918 240 L1020 282 L918 324 L875 425 L832 324 L730 282 L832 240 Z" fill="#ff9a00"/>
-  <text x="150" y="610" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="56" font-weight="800" fill="#25140f">Kuberknots | Voyage into Cybernetics</text>
-</svg>
