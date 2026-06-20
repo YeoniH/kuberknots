@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Kuberknots"
-  site-url: ""	#"https://kuberknots.com/"
+  site-url: "https://www.kuberknots.com/"
   favicon: assets/img/kuberknots-logo.png
   repo-url: "https://github.com/YeoniH/kuberknots"
   navbar:

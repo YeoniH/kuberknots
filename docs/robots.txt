@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://www.kuberknots.com/sitemap.xml
