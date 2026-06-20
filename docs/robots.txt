@@ -1,1 +1,1 @@
-Sitemap: https://YOUR-GITHUB-USERNAME.github.io/kuberknots/sitemap.xml
+Sitemap: https://kuberknots.com/sitemap.xml

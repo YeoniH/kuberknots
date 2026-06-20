@@ -35,7 +35,7 @@ Check out our recent episodes or browse around for further exploration!
 
 ::: {.latest-grid}
 ::: {.episode-card}
-![](assets/img/ep6_paolo){.episode-thumb}
+![](assets/img/ep6_paolo.png){.episode-thumb}
 
 <p class="episode-meta">Episode 6</p>
 
