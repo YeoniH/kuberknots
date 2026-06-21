@@ -29,9 +29,12 @@ website:
       A podcast exploring cybernetics — all about communication, control, and complex systems — through accessible expert conversations.
     center: |
       <div class="supporter-logos" aria-label="Kuberknots supporters">
+        <strong class="supporter-label">Supported by</strong>
+      	
         <a class="supporter-logo-link" href="http://cybernetics.anu.edu.au/" aria-label="ANU School of Cybernetics">
-          <img class="supporter-logo" src="/assets/img/logo_anu-socy.png" alt="ANU School of Cybernetics logo" style="margin-right: 1rem;">
+          <img class="supporter-logo" src="/assets/img/logo_anu-socy.png" alt="ANU School of Cybernetics logo">
         </a>
+        
         <a class="supporter-logo-link" href="https://www.ieeesmc.org/" aria-label="IEEE Systems, Man and Cybernetics Society">
           <img class="supporter-logo" src="/assets/img/logo_ieee-smc.jpg" alt="IEEE Systems, Man and Cybernetics Society logo">
         </a>

@@ -283,13 +283,72 @@ summary:focus-visible {
   padding: 0.38rem 0.7rem;
 }
 
-.supporter-logos img {
-	height: 60px;
-  vertical-align: center;
-	border: 5px solid #FFFFFF;
-	border-radius: 6px;
+.supporter-logos {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  white-space: nowrap;
 }
 
+.supporter-label {
+  /*margin-right: 0.5rem;*/
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #fff7ec;/*var(--kk-orange-soft);*/
+}
+
+/*.supporter-label {
+  margin-right: 2rem;   // space after "Supported by"
+  font-weight: 600;
+  color: #fff7ec;
+  white-space: nowrap;
+}*/
+
+.supporter-logos p {
+  margin: 0;
+}
+
+.supporter-logos a::after,
+.supporter-logos a.external::after {
+  display: none !important;
+  content: none !important;
+}
+
+.supporter-logo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.supporter-logo-link::after,
+.supporter-logo-link.external::after,
+.supporter-logos a::after,
+.supporter-logos a.external::after {
+  display: none !important;
+  content: none !important;
+}
+
+.supporter-logo {
+  display: block;
+  height: 60px;
+  width: auto;
+  max-width: 180px;
+  border: 5px solid #ffffff;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+/*.supporter-logos img {
+  height: 60px;
+  display: block;
+  border: 5px solid #ffffff;
+  border-radius: 6px;
+}*/
 
 .page-heading {
   max-width: 1180px;
@@ -373,10 +432,48 @@ summary {
   width: 100%;
 }
 
+
 .nav-footer {
   background: var(--kk-ink);
   color: #fff7ec;
   margin-top: 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.nav-footer-left,
+.nav-footer-center,
+.nav-footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-footer-left {
+  justify-content: flex-start;
+}
+
+.nav-footer-center {
+  justify-content: center;
+}
+
+.nav-footer-right {
+  justify-content: flex-end;
+}
+
+.nav-footer-right a {
+  color: #ffd38c;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.nav-footer-right a:hover {
+  color: var(--kk-orange);
+}
+
+.nav-footer-right .bi {
+  vertical-align: middle;
 }
 
 .nav-footer a {
@@ -391,6 +488,7 @@ summary {
   color: #fff7ec;
   margin: 0.35rem;
 }
+
 
 .site-disclaimer {
   text-align: center;
