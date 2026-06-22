@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Kuberknots"
-  site-url: "https://www.kuberknots.com/"
+  site-url: "https://kuberknots.com/"
   google-analytics: "G-3DVT40G7HH"
   favicon: assets/img/kuberknots-logo.png
   repo-url: "https://github.com/YeoniH/kuberknots"

@@ -827,3 +827,37 @@ details.transcript-toggle[open] summary::after {
     transition: none;
   }
 }
+
+/* Mobile footer layout */
+@media (max-width: 768px) {
+
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .nav-footer-left,
+  .nav-footer-center,
+  .nav-footer-right {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .supporter-logos {
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .supporter-logo {
+    height: 45px;
+  }
+  
+  .supporter-label {
+    margin-right: 0;
+  }
+}
