@@ -48,7 +48,7 @@ What does mathematics look like when viewed through relationships rather than ru
 
 ::: {.speaker-card}
 ::: {.speaker-photo}
-![](../assets/img/edward.jpg){fig-alt="portrait_edward"}
+![](../assets/img/edward.png){fig-alt="portrait_edward"}
 :::
 
 ::: {.speaker-bio}
