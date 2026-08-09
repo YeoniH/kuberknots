@@ -1,0 +1,166 @@
+---
+title: "DESCRIPTION"
+subtitle: "DESCRIPTION"
+date: "2025-11-13"
+image: "../assets/img/epX_XXX.png"
+categories: [Season 2, XXX]
+comments: false
+---
+
+```{=html}
+<style>
+/* Hide Quarto's automatically generated title/subtitle/date block on episode pages. */
+#title-block-header,
+.quarto-title-block {
+  display: none;
+}
+</style>
+```
+
+::: {.episode-shell}
+::: {.episode-hero}
+<p class="eyebrow">Season 2 · Episode XXX</p>
+
+# DESCRIPTION
+
+DESCRIPTION
+
+::: {.audio-card}
+## Listen
+
+```{=html}
+<div class="listen-links" aria-label="Listen to this episode on external platforms">
+  <a class="listen-icon-link" href="https://open.spotify.com/episode/XXX" target="_blank" rel="noopener noreferrer" aria-label="Listen on Spotify">
+    <i class="bi bi-spotify" aria-hidden="true"></i>
+    <span class="visually-hidden">Spotify</span>
+  </a>
+  <a class="listen-icon-link" href="https://youtu.be/XXX" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+    <i class="bi bi-youtube" aria-hidden="true"></i>
+    <span class="visually-hidden">YouTube</span>
+  </a>
+</div>
+```
+:::
+:::
+
+## Guest speaker
+
+::: {.speaker-card}
+::: {.speaker-photo}
+![](../assets/img/XXX.jpg){fig-alt="portrait_XXX"}
+:::
+
+::: {.speaker-bio}
+### NAME
+
+BIO
+
+:::
+:::
+
+
+## Quick quiz
+
+```{=html}
+<div class="quiz-card interactive-quiz">
+  <p class="quiz-kicker">Check your understanding</p>
+  <div class="quiz-stage" aria-live="polite"></div>
+  <script type="application/json" class="quiz-data">
+  [
+    {
+      "question": "XXX",
+      "options": [
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        },
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        },
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        },
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        }
+      ]
+    },
+    {
+      "question": "XXX",
+      "options": [
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        },
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        },
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        },
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        }
+      ]
+    },
+    {
+      "question": "XXX",
+      "options": [
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        },
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        },
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        },
+        {
+          "text": "XXX",
+          "correct": XXX,
+          "feedback": "XXX"
+        }
+      ]
+    }
+  ]
+  </script>
+  <noscript>
+    <p>This quiz needs JavaScript to reveal questions and answer feedback interactively.</p>
+  </noscript>
+</div>
+```
+
+
+## Transcript
+
+<details class="transcript-toggle" tabindex="0">
+<summary>Open transcript</summary>
+<div class="transcript-content">
+
+TRANSCRIPT
+
+</div>
+</details>
+
+
+:::
