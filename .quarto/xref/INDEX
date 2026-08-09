@@ -28,5 +28,11 @@
   },
   "contact.qmd": {
     "contact.html": "411b6eaf"
+  },
+  "episodes/ep-temp.qmd": {
+    "ep-temp.html": "e65e11a5"
+  },
+  "episodes/ep-007.qmd": {
+    "ep-007.html": "51a46892"
   }
 }

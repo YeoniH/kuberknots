@@ -2,12 +2,24 @@
 title: ""
 comments: false
 listing:
-  contents: "episodes/ep-*.qmd"
-  type: grid
-  sort: "date desc"
-  categories: true
-  fields: [image, title, subtitle, description, categories]
-  page-size: 12
+  - id: season-2-listing
+    contents: "episodes/ep-007.qmd"
+    type: grid
+    sort: "date desc"
+    categories: numbered
+    fields: [image, title, subtitle, description, categories]
+    page-size: 12
+    sort-ui: false
+    filter-ui: false
+  - id: season-1-listing
+    contents: "episodes/ep-00[1-6].qmd"
+    type: grid
+    sort: "date desc"
+    categories: numbered
+    fields: [image, title, subtitle, description, categories]
+    page-size: 12
+    sort-ui: false
+    filter-ui: false
 ---
 
 ::: {.page-heading}
@@ -15,6 +27,37 @@ listing:
 
 # Choose a knot to untangle.
 
-In each episode page, you can find links to audio, speaker bio, transcript, and quiz. 
+In each episode page, you can find links to audio, speaker bio, transcript, and quiz.
 :::
 
+::: {.season-section}
+<button class="season-summary" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#season-2-panel" 
+				aria-expanded="true" 
+				aria-controls="season-2-panel">
+	<span>Season 2 (2026)</span>
+	<span class="season-toggle-icon" aria-hidden="true"></span></button>
+
+::: {#season-2-panel .season-panel .collapse .show}
+::: {#season-2-listing .season-listing}
+:::
+:::
+:::
+
+::: {.season-section}
+<button class="season-summary" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#season-1-panel" 
+				aria-expanded="false" 
+				aria-controls="season-1-panel">
+	<span>Season 1 (2025)</span>
+	<span class="season-toggle-icon" aria-hidden="true"></span></button>
+
+::: {#season-1-panel .season-panel .collapse}
+::: {#season-1-listing .season-listing}
+:::
+:::
+:::

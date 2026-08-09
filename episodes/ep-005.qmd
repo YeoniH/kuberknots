@@ -1,6 +1,7 @@
 ---
 title: "Game Theory and Decision Making"
 subtitle: "Iman Shames introduces game theory, Nash equilibrium, belief hierarchies, and everyday choices in human and human-machine interaction."
+season: 1
 date: "2025-10-31"
 image: "../assets/img/ep5_iman.png"
 categories: [Season 1, game theory, decision making, equilibrium]

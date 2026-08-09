@@ -1,6 +1,7 @@
 ---
 title: "From Classical to Quantum Control"
 subtitle: "Ian Petersen explains how feedback systems power everyday technology and the quantum technologies of tomorrow."
+season: 1
 date: "2025-09-30"
 image: "../assets/img/ep4_ian.png"
 categories: [Season 1, control theory, quantum, feedback]

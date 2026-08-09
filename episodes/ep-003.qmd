@@ -1,6 +1,7 @@
 ---
 title: "Indigenous Knowledge in Cybernetics and AI"
 subtitle: "Angie Abdilla discusses Indigenous knowledge systems, creative practice, strategic design, and the cultural dimensions of automated systems."
+season: 1
 date: "2025-08-31"
 image: "../assets/img/ep3_angie.png"
 categories: [Season 1, Indigenous knowledge, AI, ethics]

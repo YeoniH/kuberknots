@@ -72,6 +72,6 @@ format:
     link-external-newwindow: true
     page-layout: full
     include-after-body: assets/includes/kuberknots-interactivity.html
-
+  
 execute:
   freeze: auto

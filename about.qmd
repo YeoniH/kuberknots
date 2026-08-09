@@ -70,16 +70,12 @@ Keep the explanations friendly while respecting the technical meaning of core co
 ::: {.section-heading .host-heading}
 ## Host
 
-Kuberknots Season 2 is hosted by [Sungyeon Hong](https://sungyeon-hong.github.io), continuing the Kuberknots voyage with curiosity, playfulness, and a focus on cybernetics as a language for tying ideas together.
+Kuberknots Season 2 is hosted by Dr [Sungyeon Hong](https://sungyeon-hong.github.io), continuing the Kuberknots voyage with curiosity, playfulness, and a focus on cybernetics as a language for tying ideas together.
 
 Sungyeon became fascinated by cybernetics as a unifying language for making sense of patterns across humans and machines, society and technology. Through Kuberknots, she invites listeners to explore the art of communication and control: how systems sense, respond, learn, adapt, and sometimes surprise us.
 :::
 
 ::: {.callout-knot}
-## Understanding our reach
-
-Kuberknots uses website analytics to understand, in broad terms, how far the podcast is reaching and how people engage with the site. We look at aggregated patterns such as visits, approximate geographic reach, and episode-page engagement to help improve future episodes and assess the podcast’s educational impact.
-
 ## Credits and supporters
 
 We acknowledge the generous support of the [ANU School of Cybernetics](http://cybernetics.anu.edu.au/) and the [IEEE Systems, Man and Cybernetics Society](https://www.ieeesmc.org/) for Kuberknots since 2025.
@@ -87,4 +83,9 @@ We acknowledge the generous support of the [ANU School of Cybernetics](http://cy
 Kuberknots Season 1 was co-hosted by Sungyeon Hong and Rebbecca TY Thien. Rebbecca, a control theorist with deep experience in control-related research, helped shape the early conversations and brought clarity, technical insight, and enthusiasm to the project. We gratefully acknowledge her contribution to Season 1 and the foundation she helped build.
 
 The content in our recordings is intended for educational and informational purposes only. All rights to the music used belong to Suno AI. All drawings featured are original works produced in-house by Sungyeon unless stated otherwise.
+
+## Understanding our reach
+
+Kuberknots uses website analytics to understand, in broad terms, how far the podcast is reaching and how people engage with the site. We look at aggregated patterns such as visits, approximate geographic reach, and episode-page engagement to help improve future episodes and assess the podcast’s educational impact.
+
 :::

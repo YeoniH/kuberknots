@@ -1,7 +1,20 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/episodes/ep-007.html",
+      "/episodes/ep-006.html",
+      "/episodes/ep-005.html",
+      "/episodes/ep-004.html",
+      "/episodes/ep-003.html",
+      "/episodes/ep-002.html",
+      "/episodes/ep-001.html"
+    ]
+  },
+  {
     "listing": "/episodes.html",
     "items": [
+      "/episodes/ep-007.html",
       "/episodes/ep-006.html",
       "/episodes/ep-005.html",
       "/episodes/ep-004.html",

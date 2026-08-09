@@ -1,10 +1,21 @@
 ---
 title: ""
 comments: false
+listing:
+  id: recent-episodes
+  contents: "episodes/*.qmd"
+  type: grid
+  sort: "date desc"
+  max-items: 3
+  sort-ui: false
+  filter-ui: false
+  categories: false
+  grid-columns: 3
+  fields: [image, title, description]
 ---
 
 ::: {.hero}
-![](assets/img/kuberknots-logo.png){.hero-logo}
+![](assets/img/kuberknots-logo_wbg.png){.hero-logo}
 
 ::: {.hero-copy}
 <p class="eyebrow">Kuberknots | Voyage into Cybernetics</p>
@@ -14,7 +25,7 @@ comments: false
 Cybernetics may sound abstract. Kuberknots makes it feel navigable: feedback, communication, control, autonomy, and complex systems explained through warm conversations with researchers, practitioners, and curious thinkers.
 
 ::: {.hero-actions}
-[Start with the latest episode](episodes/ep-006.qmd){.btn .btn-primary}
+[Start with the latest episode](episodes/ep-007.qmd){.btn .btn-primary}
 [Explore all episodes](episodes.qmd){.btn .btn-secondary}
 :::
 :::
@@ -22,9 +33,10 @@ Cybernetics may sound abstract. Kuberknots makes it feel navigable: feedback, co
 
 ::: {.topic-strip aria-label="Podcast themes"}
 <span class="topic-chip">Feedback loops</span>
-<span class="topic-chip">Human–technology relations</span>
+<span class="topic-chip">Human and technology</span>
 <span class="topic-chip">AI and society</span>
 <span class="topic-chip">Systems thinking</span>
+<span class="topic-chip">Complex Systems</span>
 :::
 
 ::: {.section-heading}
@@ -33,41 +45,7 @@ Cybernetics may sound abstract. Kuberknots makes it feel navigable: feedback, co
 Check out our recent episodes or browse around for further exploration!
 :::
 
-::: {.latest-grid}
-::: {.episode-card}
-![](assets/img/ep6_paolo.png){.episode-thumb}
-
-<p class="episode-meta">Episode 6</p>
-
-### How Cemeteries and Solar Panels Explain Modern Energy Systems
-
-Paolo Scarabaggio explains smart energy systems through multi-agent systems, energy communities, solar panels, and fairness.
-
-[Open episode](episodes/ep-006.qmd){.episode-link}
-:::
-
-::: {.episode-card}
-![](assets/img/ep5_iman.png){.episode-thumb}
-
-<p class="episode-meta">Episode 5</p>
-
-### Game Theory and Decision Making
-
-Iman Shames introduces game theory, Nash equilibrium, belief hierarchies, and everyday choices in human and human-machine interaction.
-
-[Open episode](episodes/ep-005.qmd){.episode-link}
-:::
-
-::: {.episode-card}
-![](assets/img/ep4_ian.png){.episode-thumb}
-
-<p class="episode-meta">Episode 4</p>
-
-### From Classical to Quantum Control
-
-Ian Petersen explains how feedback systems power everyday technology and the quantum technologies of tomorrow.
-
-[Open episode](episodes/ep-004.qmd){.episode-link}
+:::{.recent-episodes-wrap}
+:::{#recent-episodes}
 :::
 :::
-

@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-43c45f7fc0b328ec851545b2da249f08.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-02dfa4fb5e7474bdc4d9441736a9d489.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-season-2-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -88,7 +88,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-season-2-listing'] = new List('listing-season-2-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-season-1-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-season-1-listing'] = new List('listing-season-1-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -189,7 +217,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="QUk=">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29udHJvbCUyMHRoZW9yeQ==">control theory <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Y3liZXJuZXRpY3M=">cybernetics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGVjaXNpb24lMjBtYWtpbmc=">decision making <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZW5lcmd5">energy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZW5naW5lZXJpbmc=">engineering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXF1aWxpYnJpdW0=">equilibrium <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXRoaWNz">ethics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZmFpcm5lc3M=">fairness <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZmVlZGJhY2s=">feedback <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Z2FtZSUyMHRoZW9yeQ==">game theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aGlzdG9yeQ==">history <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5kaWdlbm91cyUyMGtub3dsZWRnZQ==">Indigenous knowledge <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bXVsdGktYWdlbnQ=">multi-agent <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cXVhbnR1bQ==">quantum <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2Vhc29uJTIwMQ==">Season 1 <span class="quarto-category-count">(6)</span></div><div class="category" data-category="c3lzdGVtcw==">systems <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="QUk=">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29udHJvbCUyMHRoZW9yeQ==">control theory <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Y3liZXJuZXRpY3M=">cybernetics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGVjaXNpb24lMjBtYWtpbmc=">decision making <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZW5lcmd5">energy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZW5naW5lZXJpbmc=">engineering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXF1aWxpYnJpdW0=">equilibrium <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXRoaWNz">ethics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZmFpcm5lc3M=">fairness <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZmVlZGJhY2s=">feedback <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Z2FtZSUyMHRoZW9yeQ==">game theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aGlzdG9yeQ==">history <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5kaWdlbm91cyUyMGtub3dsZWRnZQ==">Indigenous knowledge <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bWF0aGVtYXRpY3M=">mathematics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bXVsdGktYWdlbnQ=">multi-agent <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cXVhbnR1bQ==">quantum <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2Vhc29uJTIwMQ==">Season 1 <span class="quarto-category-count">(6)</span></div><div class="category" data-category="U2Vhc29uJTIwMg==">Season 2 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3lzdGVtcw==">systems <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
@@ -205,13 +233,56 @@ Episodes
 <p>In each episode page, you can find links to audio, speaker bio, transcript, and quiz.</p>
 </section>
 </div>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="season-section">
+<button class="season-summary" type="button" data-bs-toggle="collapse" data-bs-target="#season-2-panel" aria-expanded="true" aria-controls="season-2-panel">
+<span>Season 2 (2026)</span> <span class="season-toggle-icon" aria-hidden="true"></span>
+</button>
+<div id="season-2-panel" class="season-panel collapse show">
+<div id="listing-season-2-listing" class="season-listing quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="U2Vhc29uJTIwMSUyQ2VuZXJneSUyQ211bHRpLWFnZW50JTJDZmFpcm5lc3M=" data-listing-date-sort="1762952400000" data-listing-file-modified-sort="1781871592370" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25" data-listing-word-count-sort="4826">
+<div class="g-col-1" data-index="0" data-categories="U2Vhc29uJTIwMiUyQ0luZGlnZW5vdXMlMjBrbm93bGVkZ2UlMkNtYXRoZW1hdGljcw==" data-listing-date-sort="1786284000000" data-listing-file-modified-sort="1786266842390" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="28" data-listing-word-count-sort="5491">
+<a href="./episodes/ep-007.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/img/ep7_edward.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Mathematics as Relationship
+</h5>
+<div class="card-subtitle listing-subtitle">
+What if mathematics is less about numbers and more about relationships? Discover an Indigenous perspective on maths, learning, and AI with Edward Doolittle.
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U2Vhc29uJTIwMg=='); return false;">Season 2</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5kaWdlbm91cyUyMGtub3dsZWRnZQ=='); return false;">Indigenous knowledge</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWF0aGVtYXRpY3M='); return false;">mathematics</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+Season 2 · Episode 7
+
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+</div>
+<div class="season-section">
+<button class="season-summary" type="button" data-bs-toggle="collapse" data-bs-target="#season-1-panel" aria-expanded="false" aria-controls="season-1-panel">
+<span>Season 1 (2025)</span> <span class="season-toggle-icon" aria-hidden="true"></span>
+</button>
+<div id="season-1-panel" class="season-panel collapse">
+<div id="listing-season-1-listing" class="season-listing quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="U2Vhc29uJTIwMSUyQ2VuZXJneSUyQ211bHRpLWFnZW50JTJDZmFpcm5lc3M=" data-listing-date-sort="1762952400000" data-listing-file-modified-sort="1786266880771" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25" data-listing-word-count-sort="4826">
 <a href="./episodes/ep-006.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -243,7 +314,7 @@ Season 1 · Episode 6
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="U2Vhc29uJTIwMSUyQ2dhbWUlMjB0aGVvcnklMkNkZWNpc2lvbiUyMG1ha2luZyUyQ2VxdWlsaWJyaXVt" data-listing-date-sort="1761829200000" data-listing-file-modified-sort="1781871592370" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="23" data-listing-word-count-sort="4479">
+<div class="g-col-1" data-index="1" data-categories="U2Vhc29uJTIwMSUyQ2dhbWUlMjB0aGVvcnklMkNkZWNpc2lvbiUyMG1ha2luZyUyQ2VxdWlsaWJyaXVt" data-listing-date-sort="1761829200000" data-listing-file-modified-sort="1786266875984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="23" data-listing-word-count-sort="4479">
 <a href="./episodes/ep-005.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -275,7 +346,7 @@ Season 1 · Episode 5
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="U2Vhc29uJTIwMSUyQ2NvbnRyb2wlMjB0aGVvcnklMkNxdWFudHVtJTJDZmVlZGJhY2s=" data-listing-date-sort="1759154400000" data-listing-file-modified-sort="1781871592370" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3041">
+<div class="g-col-1" data-index="2" data-categories="U2Vhc29uJTIwMSUyQ2NvbnRyb2wlMjB0aGVvcnklMkNxdWFudHVtJTJDZmVlZGJhY2s=" data-listing-date-sort="1759154400000" data-listing-file-modified-sort="1786266872395" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3041">
 <a href="./episodes/ep-004.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -307,7 +378,7 @@ Season 1 · Episode 4
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="U2Vhc29uJTIwMSUyQ0luZGlnZW5vdXMlMjBrbm93bGVkZ2UlMkNBSSUyQ2V0aGljcw==" data-listing-date-sort="1756562400000" data-listing-file-modified-sort="1781871592370" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3858">
+<div class="g-col-1" data-index="3" data-categories="U2Vhc29uJTIwMSUyQ0luZGlnZW5vdXMlMjBrbm93bGVkZ2UlMkNBSSUyQ2V0aGljcw==" data-listing-date-sort="1756562400000" data-listing-file-modified-sort="1786266870016" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3858">
 <a href="./episodes/ep-003.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -339,7 +410,7 @@ Season 1 · Episode 3
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="U2Vhc29uJTIwMSUyQ2NvbnRyb2wlMjB0aGVvcnklMkNlbmdpbmVlcmluZyUyQ3N5c3RlbXM=" data-listing-date-sort="1753884000000" data-listing-file-modified-sort="1781871592370" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="29" data-listing-word-count-sort="5741">
+<div class="g-col-1" data-index="4" data-categories="U2Vhc29uJTIwMSUyQ2NvbnRyb2wlMjB0aGVvcnklMkNlbmdpbmVlcmluZyUyQ3N5c3RlbXM=" data-listing-date-sort="1753884000000" data-listing-file-modified-sort="1786266859595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="29" data-listing-word-count-sort="5741">
 <a href="./episodes/ep-002.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -371,7 +442,7 @@ Season 1 · Episode 2
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="U2Vhc29uJTIwMSUyQ2N5YmVybmV0aWNzJTJDaGlzdG9yeSUyQ2ZlZWRiYWNr" data-listing-date-sort="1751205600000" data-listing-file-modified-sort="1781871592370" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="27" data-listing-word-count-sort="5231">
+<div class="g-col-1" data-index="5" data-categories="U2Vhc29uJTIwMSUyQ2N5YmVybmV0aWNzJTJDaGlzdG9yeSUyQ2ZlZWRiYWNr" data-listing-date-sort="1751205600000" data-listing-file-modified-sort="1786266841410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="27" data-listing-word-count-sort="5231">
 <a href="./episodes/ep-001.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -405,7 +476,14 @@ Season 1 · Episode 1
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+</div>
+</div>
+
+
+
+
+</main> <!-- /main -->
 <button class="kk-back-to-top" id="kk-back-to-top" type="button" aria-label="Move to top" title="Move to top" style="--kk-back-to-top-bottom: clamp(5rem, 9vw, 5rem);">
   <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
   <span class="visually-hidden">Move to top</span>
