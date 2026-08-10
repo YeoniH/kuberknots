@@ -1,11 +1,11 @@
 {
   "listingMap": {
-    "index.qmd": [
-      "episodes/*.qmd"
-    ],
     "episodes.qmd": [
       "episodes/ep-007.qmd",
       "episodes/ep-00[1-6].qmd"
+    ],
+    "index.qmd": [
+      "episodes/*.qmd"
     ]
   }
 }
