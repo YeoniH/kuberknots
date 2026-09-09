@@ -3,7 +3,7 @@ title: ""
 comments: false
 listing:
   - id: season-2-listing
-    contents: "episodes/ep-007.qmd"
+    contents: "episodes/ep-00[7-8].qmd"
     type: grid
     sort: "date desc"
     categories: numbered
