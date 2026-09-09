@@ -31,11 +31,11 @@ What does it actually mean to be in control of AI? Mathematician Maurice Chiodo 
 
 ```{=html}
 <div class="listen-links" aria-label="Listen to this episode on external platforms">
-  <a class="listen-icon-link" href="" target="_blank" rel="noopener noreferrer" aria-label="Listen on Spotify">
+  <a class="listen-icon-link" href="https://open.spotify.com/episode/4f6gTY4rSSlZu7UIQNxwVN?si=npydEwBDTsOW3T1jChwHTA" target="_blank" rel="noopener noreferrer" aria-label="Listen on Spotify">
     <i class="bi bi-spotify" aria-hidden="true"></i>
     <span class="visually-hidden">Spotify</span>
   </a>
-  <a class="listen-icon-link" href="" aria-label="Watch on YouTube">
+  <a class="listen-icon-link" href="https://youtu.be/PtS_pNPZc1s" aria-label="Watch on YouTube">
     <i class="bi bi-youtube" aria-hidden="true"></i>
     <span class="visually-hidden">YouTube</span>
   </a>

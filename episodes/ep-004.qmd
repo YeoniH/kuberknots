@@ -4,7 +4,7 @@ subtitle: "Ian Petersen explains how feedback systems power everyday technology 
 season: 1
 date: "2025-09-30"
 image: "../assets/img/ep4_ian.png"
-categories: [Season 1, control theory, quantum, feedback]
+categories: [Season 1, control, quantum, feedback]
 comments: false
 ---
 
