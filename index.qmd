@@ -25,7 +25,7 @@ listing:
 Cybernetics may sound abstract. Kuberknots makes it feel navigable: feedback, communication, control, autonomy, and complex systems explained through warm conversations with researchers, practitioners, and curious thinkers.
 
 ::: {.hero-actions}
-[Start with the latest episode](episodes/ep-007.qmd){.btn .btn-primary}
+[Start with the latest episode](episodes/ep-008.qmd){.btn .btn-primary}
 [Explore all episodes](episodes.qmd){.btn .btn-secondary}
 :::
 :::
