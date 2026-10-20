@@ -4,7 +4,7 @@ subtitle: "Iman Shames introduces game theory, Nash equilibrium, belief hierarch
 season: 1
 date: "2025-10-31"
 image: "../assets/img/ep5_iman.png"
-categories: [Season 1, game theory, decision making, equilibrium]
+categories: [game theory, decision making, equilibrium, feedback]
 comments: false
 ---
 

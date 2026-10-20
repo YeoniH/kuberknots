@@ -4,7 +4,7 @@ subtitle: "Angie Abdilla discusses Indigenous knowledge systems, creative practi
 season: 1
 date: "2025-08-31"
 image: "../assets/img/ep3_angie.png"
-categories: [Season 1, Indigenous knowledge, AI, ethics]
+categories: [Indigenous knowledge, AI, feedback, ethics, culture, technology, automation]
 comments: false
 ---
 

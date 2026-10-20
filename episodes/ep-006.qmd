@@ -4,7 +4,7 @@ subtitle: "Paolo Scarabaggio explains smart energy systems through multi-agent s
 season: 1
 date: "2025-11-13"
 image: "../assets/img/ep6_paolo.png"
-categories: [Season 1, energy, multi-agent, fairness]
+categories: [energy, multi-agent, fairness]
 comments: false
 ---
 

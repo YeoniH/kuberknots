@@ -4,7 +4,7 @@ subtitle: "Ian Petersen explains how feedback systems power everyday technology 
 season: 1
 date: "2025-09-30"
 image: "../assets/img/ep4_ian.png"
-categories: [Season 1, control, quantum, feedback]
+categories: [control, engineering, quantum, feedback, plant]
 comments: false
 ---
 
@@ -129,7 +129,7 @@ Professor Ian Petersen was born in Victoria, Australia. After receiving a PhD in
 		      "feedback": "Speed may be important, but robustness is primarily about handling uncertainty and disturbances."
 		    },
 		    {
-		      "text": "Optimizing code cracking",
+		      "text": "Optimising code cracking",
 		      "correct": false,
 		      "feedback": "Robust control is unrelated to cryptography or code breaking."
 		    },
@@ -179,13 +179,11 @@ Speaker 3: I guess I start it started when I was an undergraduate student studyi
 
 Speaker 2: Ah OK, so it seems like to actually study control theory, you have to be good in math?
 
-Speaker 3
-
-Yeah, I think so. I mean, that’s why it’s called control theory. It’s about theory. And there’s lots of modelling and optimization and different mathematical ideas go into control theory. So I’d say most people who do control theory are kind of interested in the sort of mathematical side of engineering.
+Speaker 3: Yeah, I think so. I mean, that’s why it’s called control theory. It’s about theory. And there’s lots of modelling and optimisation and different mathematical ideas go into control theory. So I’d say most people who do control theory are kind of interested in the sort of mathematical side of engineering.
 
 Speaker 1: Right. Yeah. Excellent. Could you then tell us a little bit about the research that you are working on?
 
-Speaker 3: Ah yeah, I guess I’ve worked in lots of different aspects of control theory in terms of my research over the years. One of them is being robust control theory where we’re trying to make our control system so that it’ll work even if our plant is changing. For example, if we’re looking at a car and we say we’re controlling the braking system. We want the brakes to work, whether the road is a smooth road on a sunny day or it’s very wet and icy, or it’s rainy. All of those will change the behaviour of our plant, but we want the one control system to keep working in all those conditions. So that’s called robust control. Another area I’ve worked in is what’s called optimal control, which is related to optimization. It’s basically you want your control system to be the best possible control system. So, for example, you want the smoothest possible ride in your car. You want the safest possible ride in your aircraft, or you want your heating control to give the most comfortable temperature. So that’s another area I’ve worked in and then another area is quantum control, where this is kind of an out-there part of control theory. In most of the examples I talked about then the laws of classical physics, like Newton’s laws, could be used to model those systems, whereas quantum control theory we’re trying to control things that you have to use quantum mechanics to describe, so these are things like atoms controlling individual atoms or photons controlling individual photons. So this area started to become very important because of advances in quantum physics, and in particular, things like quantum computing.
+Speaker 3: Ah yeah, I guess I’ve worked in lots of different aspects of control theory in terms of my research over the years. One of them is being robust control theory where we’re trying to make our control system so that it’ll work even if our plant is changing. For example, if we’re looking at a car and we say we’re controlling the braking system. We want the brakes to work, whether the road is a smooth road on a sunny day or it’s very wet and icy, or it’s rainy. All of those will change the behaviour of our plant, but we want the one control system to keep working in all those conditions. So that’s called robust control. Another area I’ve worked in is what’s called optimal control, which is related to optimisation. It’s basically you want your control system to be the best possible control system. So, for example, you want the smoothest possible ride in your car. You want the safest possible ride in your aircraft, or you want your heating control to give the most comfortable temperature. So that’s another area I’ve worked in and then another area is quantum control, where this is kind of an out-there part of control theory. In most of the examples I talked about then the laws of classical physics, like Newton’s laws, could be used to model those systems, whereas quantum control theory we’re trying to control things that you have to use quantum mechanics to describe, so these are things like atoms controlling individual atoms or photons controlling individual photons. So this area started to become very important because of advances in quantum physics, and in particular, things like quantum computing.
 
 Speaker 3: Another area that I’ve been interested in is really part of robust control, but a particular kind of robust control that I’ve been interested in is what we call negative imaginary systems theory, which is to do with controlling mechanical structures like flexible structures, for example large base structures you might want to control to try and get rid of any vibrations in these structures, and so it turns out that this negative imaginary systems theory was kind of a useful theory that could let you damp out these vibrations in a very robust way that it didn’t really matter what the actual dynamics of the structure was as long as it satisfied some sort of well-known physical laws, like conservation of energy. Then you would have this negative imaginary property, and we could use that to design a robust control system. So they’re kind of the main areas that we’re currently working on or have worked on over the years.
 

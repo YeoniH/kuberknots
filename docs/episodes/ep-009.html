@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-10-14">
+
+<title>Mathematics without Borders – Kuberknots</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/img/kuberknots-logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-02dfa4fb5e7474bdc4d9441736a9d489.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3DVT40G7HH"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-3DVT40G7HH', { 'anonymize_ip': true});
+</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="https://kuberknots.com/" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/img/kuberknots-logo.png" alt="Kuberknots logo" class="navbar-logo light-content">
+    <img src="../assets/img/kuberknots-logo.png" alt="Kuberknots logo" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="https://kuberknots.com/">
+    <span class="navbar-title">Kuberknots | Voyage into Cybernetics</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../episodes.html"> 
+<span class="menu-text">Episodes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mathematics without Borders</h1>
+<p class="subtitle lead">Rowena Ball explores whose knowledge counts as mathematics, and what we gain by looking beyond conventional boundaries.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">mathematics</div>
+    <div class="quarto-category">nonlinear dynamics</div>
+    <div class="quarto-category">feedback</div>
+    <div class="quarto-category">emergence</div>
+    <div class="quarto-category">life</div>
+    <div class="quarto-category">chemistry</div>
+    <div class="quarto-category">communication</div>
+    <div class="quarto-category">culture</div>
+    <div class="quarto-category">Indigenous knowledge</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 14, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+/* Hide Quarto's automatically generated title/subtitle/date block on episode pages. */
+#title-block-header,
+.quarto-title-block {
+  display: none;
+}
+</style>
+<div class="episode-shell">
+<div class="episode-hero">
+<p class="eyebrow">
+Season 2 · Episode 9
+</p>
+<section id="description" class="level1">
+<h1>DESCRIPTION</h1>
+<p>What counts as mathematics, and who gets to decide? Professor Rowena Ball explores mathematics beyond conventional boundaries, from Indigenous smoke telegraphy and information flow to nonlinear dynamics and the emergence of life. Through feedback, fluctuations and interconnected systems, we discover how diverse ways of knowing can reshape our understanding of the world.</p>
+<section id="listen" class="level2 audio-card">
+<h2 class="anchored" data-anchor-id="listen">Listen</h2>
+<div class="listen-links" aria-label="Listen to this episode on external platforms">
+  <a class="listen-icon-link" href="https://open.spotify.com/episode/2jqaZn4K4FPaTIOQTqP5vb?si=vziWZqNhS3afyj0C2M1hjA" target="_blank" rel="noopener noreferrer" aria-label="Listen on Spotify">
+    <i class="bi bi-spotify" aria-hidden="true"></i>
+    <span class="visually-hidden">Spotify</span>
+  </a>
+  <a class="listen-icon-link" href="https://youtu.be/roxNoovo8H8" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">
+    <i class="bi bi-youtube" aria-hidden="true"></i>
+    <span class="visually-hidden">YouTube</span>
+  </a>
+</div>
+</section>
+</section>
+</div>
+<section id="guest-speaker" class="level2">
+<h2 class="anchored" data-anchor-id="guest-speaker">Guest speaker</h2>
+<div class="speaker-card">
+<div class="speaker-photo">
+<p><img src="../assets/img/rowena_nobg.png" class="img-fluid" alt="portrait_rowena"></p>
+</div>
+<section id="rowena-ball" class="level3 speaker-bio">
+<h3 class="anchored" data-anchor-id="rowena-ball">Rowena Ball</h3>
+<p>Professor Rowena Ball is a mathematician at the Mathematical Sciences Institute, Australian National University. In her own words:</p>
+<p><em>I had the benefit of a full multidisciplinary training in mathematics and in mathematical chemical physics, so that has enabled my research journey to take the scenic route. (A series of ARC fellowships has helped too.) Working on complex and nonlinear dynamical systems problems with scientists and engineers from different disciplines has given me a wider appreciation of the cultural frameworks of knowledge. Respect for culture underpins my group’s research and teaching initiative on non-Western and Indigenous mathematics.</em></p>
+</section>
+</div>
+</section>
+<section id="quick-quiz" class="level2">
+<h2 class="anchored" data-anchor-id="quick-quiz">Quick quiz</h2>
+<div class="quiz-card interactive-quiz">
+  <div class="quiz-stage" aria-live="polite"></div>
+
+  <script type="application/json" class="quiz-data">
+  [
+    {
+      "question": "Why does Rowena Ball argue that we should reconsider who gets to define mathematics?",
+      "options": [
+        {
+          "text": "To replace existing mathematics with entirely new methods",
+          "correct": false,
+          "feedback": "The aim is not to discard existing mathematics, but to broaden what is recognised and valued."
+        },
+        {
+          "text": "To recognise mathematical knowledge and contributions beyond dominant curricula",
+          "correct": true,
+          "feedback": "Exactly. Rowena argues that conventional curricula have privileged particular histories and traditions, overlooking important mathematical knowledge developed elsewhere."
+        },
+        {
+          "text": "To establish a universal definition of mathematics",
+          "correct": false,
+          "feedback": "Rowena challenges the authority behind established definitions rather than seeking one universal definition."
+        },
+        {
+          "text": "To separate mathematics from its cultural and historical contexts",
+          "correct": false,
+          "feedback": "Quite the opposite. She emphasises that mathematical knowledge is embedded in cultural and historical contexts."
+        }
+      ]
+    },
+    {
+      "question": "What makes the use of chirality in Indigenous smoke telegraphy particularly significant?",
+      "options": [
+        {
+          "text": "It relied on modern algebraic methods to encode messages",
+          "correct": false,
+          "feedback": "The significance lies in practical and empirical knowledge, not a documented reliance on modern algebra."
+        },
+        {
+          "text": "It used different smoke colours to represent numbers",
+          "correct": false,
+          "feedback": "The example Rowena discusses concerns the handedness of smoke spirals, rather than their colour."
+        },
+        {
+          "text": "It used left- and right-handed smoke spirals to convey different meanings",
+          "correct": true,
+          "feedback": "Exactly. Rowena describes historical accounts of deliberately created smoke spirals of opposite handedness, illustrating sophisticated empirical knowledge of chirality."
+        },
+        {
+          "text": "It required electrical equipment to transmit signals",
+          "correct": false,
+          "feedback": "Smoke telegraphy was a communication technology that operated without electrical equipment."
+        }
+      ]
+    },
+    {
+      "question": "According to Rowena's research, why can fluctuations help in the emergence of life?",
+      "options": [
+        {
+          "text": "They can recycle non-functional polymers, provided fluctuations are not excessively destructive",
+          "correct": true,
+          "feedback": "Exactly. Stronger fluctuations can break down non-functional polymers into reusable components, but too many can also destroy functional structures. The distribution of fluctuations matters."
+        },
+        {
+          "text": "They eliminate the need for energy flowing through a chemical system",
+          "correct": false,
+          "feedback": "Rowena describes life's emergence in driven, dissipative environments far from equilibrium, where ongoing flows are fundamental."
+        },
+        {
+          "text": "They ensure that all molecular structures become stable",
+          "correct": false,
+          "feedback": "Fluctuations can also destabilise and destroy molecular structures. Their constructive effects depend on their distribution and intensity."
+        },
+        {
+          "text": "They prevent functional polymers from ever breaking down",
+          "correct": false,
+          "feedback": "Functional polymers can also be destroyed by fluctuations, particularly when high-amplitude disturbances are too frequent."
+        }
+      ]
+    }
+  ]
+  
+  </script>
+  <noscript>
+    <p>This quiz needs JavaScript to reveal questions and answer feedback interactively.</p>
+  </noscript>
+</div>
+</section>
+<section id="transcript" class="level2">
+<h2 class="anchored" data-anchor-id="transcript">Transcript</h2>
+<details class="transcript-toggle" tabindex="0">
+<summary>
+Open transcript
+</summary>
+<div class="transcript-content">
+<p>Speaker 1 (Sungyeon)</p>
+<p>Today, I am thrilled to have Professor Rowena Ball from the Mathematical Sciences Institute at the Australian National University. Welcome, Rowena!</p>
+<p>Speaker 2 (Rowena)</p>
+<p>Well, I’m thrilled to be having this yarn with you, Sungyeon.</p>
+<p>Speaker 1</p>
+<p>Thank you so much for taking your time to do this.</p>
+<p>Speaker 2</p>
+<p>Well, thanks so much for inviting me to this session of your fabulous podcast series. And it’s also a great privilege to be doing this interview on Ngunnawal and Ngambri country. I feel the ancestors – I know we’re in a studio, but I feel the ancestors are with us and are listening and are guiding us.</p>
+<p>Speaker 1</p>
+<p>Thanks, Rowena. I’d also like to pay my respect to the traditional custodians of the land we’re meeting on today. With gratitude, let’s get started! Your research career seems remarkably wide-ranging, from nonlinear dynamics and fluctuation physics, to the origins of life, and also Indigenous mathematics and even railways. I got to wonder how you started out your research, your career journey in mathematics?</p>
+<p>Speaker 2</p>
+<p>It was more like one of those mystery flights or train journeys that used to be popular, where you turn up at Central Station or the airport. And you’re not told the destination in advance, but you know you’re in for an exciting ride. The journey itself is a major component of an exciting composite destination. But the Venn diagram of thrilling journeys and what you can get paid for has to have substantial overlap. So my first postdoc position was in the School of Mathematics at Leeds University in the UK, collaborating with engineering on real-world mathematics problems involving feedback and instabilities and chaotic dynamics. That’s how I started meeting and working with a wonderful diversity of people. And it’s a way of working that I continue to value to this day. I had the benefit, though, of a full multidisciplinary training in mathematics and in mathematical chemical physics. So that enabled the journey to take the scenic route.</p>
+<p>Speaker 1</p>
+<p>Oh, I see. Wow. Yeah, thanks for sharing. We’ll get to unpack some of your work shortly, but before diving in, I think you mentioned something about chaos theory and <strong>nonlinear dynamics</strong>. So could you please explain what they are and why they are important.</p>
+<p>Speaker 2</p>
+<p>One of the little sort of epigrams or memes often reposted on social media goes something like this. Nonlinear dynamics is like defining the bulk of zoology as the study of non-elephants. I suppose the point of that is that linearity is the exceptional case. Although now I come to think of it, nobody has ever provided a convincing proof that elephants are linear.<br>
+Nonlinear dynamics, you can tell by the name, is about journeys. And journeys have a never-ending fascination for humans. Changes in position with respect to time. The best, or for that matter, the worst journeys are nonlinear and layered. The First Nations historian, storyteller elders typically tell one layer of the story at a time. And people say, that can’t be true. But when you add up all the layers over time, it is true. Such as it could be an accurate account of the habits and last cycle of an animal. That’s the definite integral, isn’t it? And the journey or the story is nonlinear in time and space. So that’s why you have to integrate to get the true picture.<br>
+So the problem of integration, which we usually regard as solution of differential equations by Hook or by Crooks, usually by Crooks or numerical approximation, because most of them just don’t have analytic solutions. That was a practical problem for all societies for many hundreds or thousands of years, not just in Europe from the 17th century. In my PhD project, I developed mathematics that originated in Russia to investigate problems of thermochemical runaway and thermal explosions. That’s nonlinear dynamics for you with a bang. Or, you asked what are nonlinear dynamics. Those particular phenomena happen because the rate of chemical reaction is exponential with respect to the temperature, whereas the rate of heat loss is linear in the temperature. But in general, nonlinear science is important, because it is multi-field and multidisciplinary. And a lot of leading-edge research fields have grown up synergistically with advances in the theory and mathematics of nonlinear dynamics. So very diverse fields. Optics, ecosystems, neuroscience, climatology, earth sciences, branches of engineering have all been given new impetus and direction from lateral application of the mathematics of nonlinear dynamics. So what we are seeing is that nonlinear theory and mathematics is driving developments in very diverse.</p>
+<p>Speaker 1</p>
+<p>Yeah, absolutely. What you just said about arriving at a railway station without a particular destination in mind really captures the spirit of nonlinear dynamics, I guess. We might have some expectations about where the journey could take us, but there are also things we simply cannot anticipate until they unfold along the way. So I think that’s a lovely analogy for nonlinear dynamics as opposed to the more predictable and proportional relationships we often associate with linear systems.</p>
+<p>Speaker 2</p>
+<p>Yeah, it’s very exciting. And that journey is reason enough to study it, to look out the window, look at the landscapes around you, look at the events around you, and saying, what is the story? and then integrating those stories to obtain a complete picture of the behaviour.</p>
+<p>Speaker 1</p>
+<p>Yeah, that’s a lovely way of putting it. So it’s not just about where the journey takes us, but also the stories that emerge along the way and how they come together to reveal a bigger picture. And I suppose that’s part of what makes studying complex systems so fascinating. We don’t necessarily know the whole story in advance, right?</p>
+<p>Speaker 2</p>
+<p>Yeah.</p>
+<p>Speaker 1</p>
+<p>So now I’d like to spend a little bit of time to hear about your <strong>Mathematics Without Borders</strong> program. And I believe it begins with a deceptively simple question asking, what is mathematics? So the question that I wanted to ask you about this was, what have you come to think we miss when we answer that question only through the mathematics represented in conventional curricula?</p>
+<p>Speaker 2</p>
+<p>We actually lead the Mathematics Without Borders program with <em>three</em> questions, which are coupled. What is mathematics? as you’ve just asked. What is included in mathematics? and <em>who</em> gets to say? Now reams have been written on the first question, what is mathematics? And just in the past few months, it seems the whole world and their dog has had their say on social media and blogs!<br>
+But to answer this first question, we really need to start with the third question: <em>Who gets to say what mathematics is or is not?</em><br>
+The mathematics curriculum we have is a colonial conquest. What is thought of as Western mathematics, or mainstream or British European mathematics, colonised the minds and the curriculums of the whole world. For instance, Japanese native Wasan mathematics was swept out in 1868 and replaced with the Western curriculum. And in standard school and university curriculums, everywhere in the world, mathematics is taught as the privileged manifestation of European knowledge. And in undergraduate mathematics, students study everything that has been done in the last three centuries in Europe and the US, but almost nothing about what happened anywhere else in the world before or during that time.<br>
+So it’s not surprising they absorb this authoritative but incorrect message to the effect that the rest of the world never had any mathematics. So the global dominance of Western-based mathematics and the whole epistemology in curriculums and in research and applications has transformed society for better or worse; or for better and worse. But it also has led to a neglect, if not active suppression of non-Western and Indigenous mathematical knowledges and misrepresentations of mathematical histories. So with some exceptions that are usually marginalised and infantilised under the label of ethno-mathematics, the mathematical sciences have lagged and even stonewalled in recognising the substance or even the existence of non-mainstream mathematical knowledge. So we know the great traditions of Indian and Chinese mathematics have been studied by Western historians, but they are pretty much ignored in mainstream mathematics itself. Just for example, evidence that beyond all reasonable doubt that the calculus originated in India three centuries before Newton and Leibniz and was taken to Europe has not dented the Newton, Leibniz, Gregory exclusive attribution.</p>
+<p>Speaker 1</p>
+<p>Yeah.</p>
+<p>Speaker 2</p>
+<p>And I’ve got a student onto it.</p>
+<p>Speaker 1</p>
+<p>That’s great. Yeah, I think when it comes to the origin of the ideas like that, it may often be the case that we are miscrediting some other people without knowing the entirety or the broader picture of where the ideas originated from.</p>
+<p>Speaker 2</p>
+<p>Yes, and once those myths propagate are embedded into the curriculum, they propagate down the centuries and people repeat them.</p>
+<p>Speaker 1</p>
+<p>Exactly. I believe there’s a certain momentum that ideas and concepts can acquire over time. Even though they are not physical entities, they still travel across space and time. And I suppose there’s a kind of positive feedback at work here. As certain ideas become more widely accepted and established, they gain greater visibility and authority, which in turn reinforces their dominance, right? So meanwhile, other ideas, and sometimes even their original contributors, gradually fade from view. So our conventional curricula may actually play a part in sustaining that feedback loop.</p>
+<p>Speaker 2</p>
+<p>Yes, you’re so right, Sungyeon, and this is what we try to address in our program, answering the third question – who gets to say– leads us to more inclusive answers to the second question: what can be included in mathematics? And to the first question, what is mathematics? And best of all, it will also give us more and bigger mathematics. The more mathematics, the better.<br>
+And why do we need more, and more diverse, mathematics? Well, let me put it this way. In 1959, the Unreasonable Effectiveness of Mathematics (in the Natural Sciences) was contemplated by Wigner as this wonderful gift which we neither understand nor deserve. The wonder being that mathematics is so powerful in describing and predicting observed behaviours of the physical and even the biological and social worlds.<br>
+That was 1959. 65 years later, <strong>is</strong> mathematics still so wonderfully, unreasonably effective? Mathematics publications proliferate like never before. Yet those worlds, the physical, biological and social, are beset by even worse problems that are just unprecedented in kind or in scale and global reach. We have global heating, this despairing, seemingly endless cycles of regional wars that humanity seems locked into, the rise of the far-right, the intractable biases of artificial intelligence, microplastics pollution of the oceans, the list just goes on.<br>
+So we might begin to suspect that mathematics could benefit from a bit of new shot in order to update a bit and maintain this celebrated “unreasonable effectiveness” in the contemporary and near future settings. So that’s why we should be asking, where might that new shot come from? What is a way forward that has the best potential to shape and ensure the vitality and future of the mathematical sciences?<br>
+And secondly, to benefit humanity in the immediate future. And if we look at opportunities rather than deficits, there is just unprecedented scope for diversification of the cultural base of mathematics through greater inclusion of non-Western and Indigenous mathematical knowledge. But there’s a lot of groundwork to be done. Mathematics Without Borders aims to prepare and sow that ground in our research and teaching programs.</p>
+<p>Speaker 1</p>
+<p>Yeah, that was really beautifully put. And I guess it takes some courage for students to take out different approaches sometimes as well, away from what they are taught in their traditional organisation.</p>
+<p>Speaker 2</p>
+<p>I thought that too. But the course was actually sold out. We had to turn students away. So it’s something that students are looking for. And we got many inquiries from outside the institution. And students talk to each other. You see? So I actually think that maybe 10 years ago that would have been true. Students would have looked at that very cautiously. But things have changed. They’re looking; they are shaping the future they will graduate into and into their working lives.</p>
+<p>Speaker 1</p>
+<p>Right. That sounds music to my ears actually. Students these days are taking more agency in choosing what kind of approaches they’d like to take in learning mathematics and probably in many others as well. And it’s really delightful to hear that the course was such a great success with lots of students’ interest in the diversity of mathematics.<br>
+So with that uplifting and hopeful message in mind, now let us zoom into one of your studies about <strong>Indigenous smoke telegraphy</strong>. I found this really fascinating and thought that it should be shared more widely because at the core of cybernetics, we are all interested in understanding information flow and communication to regulate not just oneself but regulate the environment as a whole. So could you first describe how smoke was used as a communication technology, and what kinds of mathematical concepts are there?</p>
+<p>Speaker 2</p>
+<p>Smoke signalling seems to be a very ancient, long distance communication technology. So when was it invented? smoke is a natural signal, of course. It’s a signal of fire. And humans would have exploited its potential very early in our history. If we go back 65,000 years in Australia when sea levels were 100 metres lower, 100 or more metres lower during a glacial maximum, smoke from natural bushfires on the exposed greater Australian shelf in the north would have been visible to people on Timor or nearby islands. So during that glacial maximum period, people migrating out of Africa over the thousands of years and down into Southeast Asia could get to Timor and nearby islands. And they would have seen smoke, natural bushfire smoke from Australia, maybe 50 or 80 kilometres away. And that could have inspired the original voyages to Australia.<br>
+So that begs the question, did those voyagers who arrived safely in perhaps a fleet of canoes, did they send up smoke signals to family and friends they left behind? And did those smoke telegrams say something like: ARRIVED SAFELY. LAND OF PLENTY. BUILD MORE OUTRIGGER CANOES. MAKE SAILS. COME SOON. You have to ask, was smoke signalling technology Australia’s first export? Well, that’s speculation, but it’s not unreasonable speculation and it may become more reasonable in future archaeological studies.<br>
+What we do know though from authentic pre-colonial sources is that by the mid-1600s, smoke telegraphy relayed coded signals with perfect fidelity relayed over long distances. It was very highly developed. And even decades after the transcontinental electrical telegraph went in, 1872, smoke telegraphy was still the finest, most effective and sophisticated long distance communication system <em>in the world</em>.</p>
+<p>Speaker 1</p>
+<p>Yeah, that’s remarkable. Would there be anything that you’d like to emphasise about smoke signalling in terms of the relationship between formal mathematics and embodied or empirical knowledge?</p>
+<p>Speaker 2</p>
+<p>Oh, there’s so much that you’d have to read the papers that I’ve given as references! But one thing I’d like to talk about because it just blows my mind. It absolutely blows my mind that chiral smoke signals or spirals of opposite handedness were purposely created by women and men smoke signallers and formed part of the code. And there were numerous eyewitness accounts and descriptions of the creation of left-handed and right-handed smoke spirals to mean different things. And the expert signallers understood what they were doing.<br>
+Knowledge of <strong>chiral symmetry</strong> was lived empirical mathematics of Indigenous societies. But it was not until well into the 20th century that mathematics and mathematicians began to take an interest in chirality as a geometric property. And the problem of chirality to this day is still not fully resolved in mathematics. Its use in smoke signal coding seems to have been a world first in a working communications technology. So it’s one instance of how empirical knowledge and effective technological usage often precedes theoretical or algebraic formulation.</p>
+<p>Speaker 1</p>
+<p>That’s right, yeah. And for those listeners who are not really familiar with chirality, how would you describe that? Maybe as a shape or with an example.</p>
+<p>Speaker 2</p>
+<p>So chiral pairs of objects are non-superimposable mirror images, and you can’t convert one into the other. There’s a substantial activation energy. Chirality in chemistry has been known about since the 1850s, since Louis Pasteur separated chiral crystals of ammonium tartrate by eye using tweezers, and in physics from 1904. But it was not thought to be, for some reason, it just wasn’t thought to be mathematician’s business until much later. And in biochemistry and pharmacology, the full importance of biological chirality… The full importance of chirality in physiology and biology became evident after the thalidomide tragedies of the 1950s. One form, either a left- or a right-hand form, only one form of a drug molecule is effective in humans. And the other form — the other-handed form — is highly toxic. So in the case of the thalidomide tragedies, the wrong-handed molecule caused birth defects.</p>
+<p>Speaker 1</p>
+<p>That’s right. So it’s really important to distinguish between the left-handed and right-handed forms of a molecule, because even though they may have the same chemical composition, they can interact with biological systems in very different ways, potentially leading to serious safety consequences, as the thalidomide tragedy illustrates.</p>
+<p>Speaker 2</p>
+<p>Well, in biology, they can, because biology is fundamentally chiral. So all organisms, the whole of biology that we know of uses L-amino acids and D-ribose, so D-ribo-nucleic acids or D-ribo deoxy-ribonucleic acids in our RNA and DNA.<br>
+The question arises, well, why don’t the aliens come here? Well, the aliens, why don’t the aliens from another galaxy ever come here? Where is everybody? I think that’s a famous question that’s being asked and that was asked I think in 1959 by Fermi, a physicist. And then we have in 1969, I think we had the Drake equation, which assigns probabilities to life being found elsewhere in the universe. And so that question, well, where is everybody? Well, the aliens don’t come here because the aliens are of opposite chirality. So the aliens use D-amino acids and L-ribose. And if they came here, the pub bistro menus would have to include options like OC for opposite chirality as well as V, V for vegetarian and GF for gluten free. Otherwise the aliens would starve!</p>
+<p>Speaker 1</p>
+<p>They wouldn’t survive here! That’s right.</p>
+<p>Speaker 2</p>
+<p>They couldn’t get anything to eat. But making food of opposite chirality is hugely expensive. And that would have to be made in the laboratory. So it’s prohibitively expensive. So that’s just sort of a, it’s a fun thing to think about. It’s just a silly fun thing to think about, but it makes you ponder on the fundamental importance of chirality to life.<br>
+And the fact that Indigenous societies were making use of chirality in technology for hundreds of years, if not longer at least, before Western science and mathematics began to describe it and became aware of it.<br>
+And chirality was known to other societies. It’s reflected in art — I’ve seen this Roman mosaic in an early Christian basilica which has three left-handed snails and I think 8 or 5 right-handed ones. Left-handed chiral shell snails are very rare and they used to be called kings. And in early Christian mythology there were three kings. So that’s in early sort of nativity mythology. And so that mosaic clearly is telling a story. But all the people, all the artists and archaeologists looking at that mosaic didn’t spot it. It takes a mathematician to spot it.</p>
+<p>Speaker 1</p>
+<p>Oh, interesting!</p>
+<p>Speaker 2</p>
+<p>So chirality was known, but as I’ve said before, Indigenous societies were the first to actually use it as a really practical and effective technology for communications.</p>
+<p>Speaker 1</p>
+<p>Yeah, indeed. That’s really fascinating. Speaking of RNA and DNA just now, I think it creates a really good segue for us to talk about another part of your work, which concerns the <strong>emergence of life</strong>. So how does a mathematician approach a question as enormous as how non-living chemistry begins to organise into something lifelike? I think this is such a fascinating domain.</p>
+<p>Speaker 2</p>
+<p>Oh, well, I guess that’s a fair question. It was more like, how can mathematics help? Emergence-of-life science has become this huge international, interdisciplinary science in its own right. It seems to have this whole suite of complex nonlinear dynamics problems associated with it. And I’ll give you an example, example of the chirality of life, but it’s kind of harder than that because a chiral pair of structures is isometric as well as being non-superimposable mirror images. It’s not surprising that mathematics still hasn’t come to terms with it. It means that we need coordinates to distinguish them. And I feel this is an area in which human or non-AI mathematics could help make real advances in understanding the origin and occurrence and distribution and fate of life in the universe. Another example of how mathematics can help is the problem of stability of complex networks. So life emerged as a molecular network in a fluctuating, messy, driven, dissipative setting.</p>
+<p>Speaker 1</p>
+<p>So you just mentioned <strong>fluctuations</strong>, and I believe that we often associate fluctuations to something like noise, something destructive. But I wonder whether in your work, fluctuations can actually be constructive?</p>
+<p>Speaker 2</p>
+<p>Oh, that’s a fabulous observation. And it’s so, insightful of you to ask that question and make that comment. One of the humble achievements of our collaborative work has been to show that living systems cannot emerge, persist, grow and evolve in a non-fluctuating environment. So it simply cannot happen. We’ve been able to go a step further too. And this was published a few years ago, we can constrain the variance of incident fluctuations on a protobiotic system, you need some high amplitude fluctuations because the high amplitude fluctuations are going to help dispose of non-functional polymers for recycling. So if you’ve got some high amplitude fluctuations, they’re going to be destructive and hydrolyse polymers that are no darn good for persistence and evolution and replication. And the resultant monomers can then recycled into perhaps better polymers, or if not, destroyed again by the high amplitude fluctuations. But too many high amplitude fluctuations is going to destroy functional polymers faster than they can be created.<br>
+Okay. So again, you’re going to have this stopped flow situation where incipient life is stopped by too many high amplitude fluctuations destroying functional polymers. That’s right. But if you get the fluctuation distribution weighted towards just tiny little fluctuations, what happens is that you just get formation of tar, the whole thing collapses into messy black tars, tarry substance. And that’s just, that’s exactly what we’ve simulated that. And that’s exactly what organic chemists complain about. It’s been many publications since the 1990s. It’s been their despair. The tar problem, it’s called, or the tar paradox. Anything they do to try and get RNA to replicate in the laboratory ends up in these black sticky mess. And all of this action happens on and between mineral surfaces. So the emergence of life is this complex dynamical systems problem, involving inorganic and organic species in a fluctuating environment, far from equilibrium, that has to be got right.</p>
+<p>Speaker 1</p>
+<p>Indeed, yeah, just the right amount of fluctuation — not too high, not too low, so that stability can be developed over time when it comes to giving rise to living organism.</p>
+<p>Speaker 2</p>
+<p>We started to wonder whether you might find some of these “stopped flow experiments” in sediments on Mars. So Mars episodically had liquid surface water and conditions that could sustain a strongly non-equilibrium flow system and then it all dried out, and you know… So we’re wondering if future probes on Mars could scan the subsurface and we could put machine learning to work on identifying patterns of streaky tars that might have originated from incipient life that was stopped because that particular crater or whatever dried out, river system or whatever it is, could distinguish tar patterns from incipient life from random tars that were just present from organic chondritic materials that struck the surface of Mars.</p>
+<p>Speaker 1</p>
+<p>That’s super interesting. Yeah. So far, we’ve talked about mathematics across cultures, communication, fluctuations, and the emergence of life. So all these may seem very different on the surface. But I’d be interested in hearing how you see a deeper <strong>connection</strong> between them, perhaps in <em>how patterns and relationships emerge and how we can best learn to recognise them</em>.</p>
+<p>Speaker 2</p>
+<p>I think the trick is to see knowledge within institutional and cultural frameworks. If we could have greater respect for the knowledges and epistemologies of other cultures embedded within our curriculums and research structures and metrics – the reward system – then we’re going to see more recognition of deep connections between phenomena that might seem very different, and vice versa. Deep differences between phenomena that might seem very similar, and even discovery of new principles.<br>
+Mathematics is the ideal connecting science to do this in very practical ways. Mathematics is what the human brain does to unify and progress our society. But we absolutely have to talk with scientists from other disciplines. And over the last sort of like 10 years or even longer, we’ve been seeing more students doing double degrees, haven’t we?</p>
+<p>Speaker 1</p>
+<p>Yeah, right.</p>
+<p>Speaker 2</p>
+<p>And that’s fabulous because it means they see multidisciplinary as important to their futures and to the world they’re graduating in. And I think we’d certainly see more multidisciplinary degrees if it wasn’t so expensive for them, particularly for minority and disadvantaged students. So that’s a challenge I would throw out to higher education policy and bean counters.</p>
+<p>Speaker 1</p>
+<p>Yeah, well said.</p>
+<p>Speaker 2</p>
+<p>Yeah.</p>
+<p>Speaker 1</p>
+<p>Thank you so much, Rowena, for sharing your insights into the diversity of mathematics and the systemic support needed to recognise and nurture it. I’d love to see mathematics, and indeed all other fields of scholarship, flourish through mutual respect, openness to different ways of knowing, and the genuine appreciation of the diverse contributions that have shaped our understanding of the world. And it’s been a real pleasure speaking with you today. Thanks a lot again.</p>
+<p>Speaker 2</p>
+<p>Thanks so much, Sungyeon.</p>
+</div>
+</details>
+</section>
+</div>
+
+
+
+</main> <!-- /main -->
+<button class="kk-back-to-top" id="kk-back-to-top" type="button" aria-label="Move to top" title="Move to top" style="--kk-back-to-top-bottom: clamp(5rem, 9vw, 5rem);">
+  <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+  <span class="visually-hidden">Move to top</span>
+</button>
+
+<script>
+(function () {
+  function onReady(callback) {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", callback);
+    } else {
+      callback();
+    }
+  }
+
+  function setupBackToTop() {
+    const button = document.getElementById("kk-back-to-top");
+    if (!button) return;
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    function updateVisibility() {
+      if (window.scrollY > 420) {
+        button.classList.add("is-visible");
+      } else {
+        button.classList.remove("is-visible");
+      }
+    }
+
+    button.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: prefersReducedMotion.matches ? "auto" : "smooth"
+      });
+    });
+
+    updateVisibility();
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+  }
+
+  function setupTranscriptToggles() {
+    const detailsBlocks = document.querySelectorAll("details");
+
+    detailsBlocks.forEach(function (details) {
+      const summary = details.querySelector("summary");
+      const summaryText = summary ? summary.textContent.toLowerCase() : "";
+      const isTranscript = details.classList.contains("transcript-toggle") || summaryText.includes("transcript");
+
+      if (!isTranscript || details.dataset.clickAnywhereReady === "true") return;
+
+      details.classList.add("transcript-toggle");
+      details.dataset.clickAnywhereReady = "true";
+
+      if (!details.hasAttribute("tabindex")) {
+        details.setAttribute("tabindex", "0");
+      }
+
+      details.addEventListener("click", function (event) {
+        if (!(event.target instanceof Element)) return;
+
+        const interactiveElement = event.target.closest("summary, a, button, input, textarea, select, label, audio, video");
+        if (interactiveElement) return;
+
+        details.open = !details.open;
+        event.preventDefault();
+      });
+
+      details.addEventListener("keydown", function (event) {
+        if (event.target !== details) return;
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          details.open = !details.open;
+        }
+      });
+    });
+  }
+
+  function setupInteractiveQuizzes() {
+    document.querySelectorAll(".interactive-quiz").forEach(function (quiz) {
+      if (quiz.dataset.quizReady === "true") return;
+
+      const dataElement = quiz.querySelector(".quiz-data");
+      const stage = quiz.querySelector(".quiz-stage");
+      if (!dataElement || !stage) return;
+
+      let questions;
+      try {
+        questions = JSON.parse(dataElement.textContent);
+      } catch (error) {
+        stage.textContent = "The quiz could not be loaded. Please check the quiz JSON.";
+        return;
+      }
+
+      if (!Array.isArray(questions) || questions.length === 0) return;
+
+      quiz.dataset.quizReady = "true";
+      let currentIndex = 0;
+
+      function renderQuestion() {
+        const question = questions[currentIndex];
+        stage.innerHTML = "";
+
+        const progress = document.createElement("p");
+        progress.className = "quiz-progress";
+        progress.textContent = "Question " + (currentIndex + 1) + " of " + questions.length;
+        stage.appendChild(progress);
+
+        const heading = document.createElement("h3");
+        heading.className = "quiz-question";
+        heading.textContent = question.question;
+        stage.appendChild(heading);
+
+        const options = document.createElement("div");
+        options.className = "quiz-options";
+        options.setAttribute("role", "list");
+        stage.appendChild(options);
+
+        const feedback = document.createElement("p");
+        feedback.className = "quiz-feedback";
+        feedback.setAttribute("role", "status");
+        feedback.setAttribute("aria-live", "polite");
+
+        const controls = document.createElement("div");
+        controls.className = "quiz-controls";
+
+        question.options.forEach(function (option, optionIndex) {
+          const button = document.createElement("button");
+          button.className = "quiz-option";
+          button.type = "button";
+          button.textContent = option.text;
+          button.addEventListener("click", function () {
+            handleAnswer(optionIndex, question, options, feedback, controls);
+          });
+          options.appendChild(button);
+        });
+
+        stage.appendChild(feedback);
+        stage.appendChild(controls);
+      }
+
+      function handleAnswer(selectedIndex, question, optionsContainer, feedback, controls) {
+        const buttons = Array.from(optionsContainer.querySelectorAll(".quiz-option"));
+        const selected = question.options[selectedIndex];
+        const correctIndex = question.options.findIndex(function (option) {
+          return option.correct === true;
+        });
+        const correct = question.options[correctIndex];
+
+        buttons.forEach(function (button, index) {
+          button.disabled = true;
+          button.setAttribute("aria-disabled", "true");
+
+          if (index === correctIndex) {
+            button.classList.add("is-correct");
+          }
+          if (index === selectedIndex && selected.correct !== true) {
+            button.classList.add("is-incorrect");
+          }
+        });
+
+        const feedbackPrefix = selected.correct ? "" : "Not quite.";
+        const feedbackText = selected.feedback || (selected.correct ? "That is the best answer." : "The highlighted answer is the best fit.");
+        const correctText = selected.correct ? "" : " Correct answer: " + correct.text;
+        feedback.textContent = feedbackPrefix + " " + feedbackText + correctText;
+
+        controls.innerHTML = "";
+        const nextButton = document.createElement("button");
+        nextButton.type = "button";
+        nextButton.className = "quiz-next";
+        nextButton.textContent = currentIndex < questions.length - 1 ? "Next question" : "Restart quiz";
+        nextButton.addEventListener("click", function () {
+          if (currentIndex < questions.length - 1) {
+            currentIndex += 1;
+          } else {
+            currentIndex = 0;
+          }
+          renderQuestion();
+        });
+        controls.appendChild(nextButton);
+      }
+
+      renderQuestion();
+    });
+  }
+
+  onReady(function () {
+    setupBackToTop();
+    setupTranscriptToggles();
+    setupInteractiveQuizzes();
+  });
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/kuberknots\.com\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><strong>Kuberknots | Voyage into Cybernetics</strong><br>
+A podcast exploring cybernetics — all about communication, control, and complex systems — through accessible expert conversations.</p>
+</div>   
+    <div class="nav-footer-center">
+<div class="supporter-logos" aria-label="Kuberknots supporters">
+<p><strong class="supporter-label">Supported by</strong></p>
+<p><a class="supporter-logo-link" href="http://cybernetics.anu.edu.au/" aria-label="ANU School of Cybernetics"> <img class="supporter-logo" src="../assets/img/logo_anu-socy.png" alt="ANU School of Cybernetics logo"> </a></p>
+<p><a class="supporter-logo-link" href="https://www.ieeesmc.org/" aria-label="IEEE Systems, Man and Cybernetics Society"> <img class="supporter-logo" src="../assets/img/logo_ieee-smc.jpg" alt="IEEE Systems, Man and Cybernetics Society logo"> </a></p>
+</div>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@Kuberknots" rel="noopener noreferrer" target="_blank">
+      <i class="bi bi-youtube" role="img" aria-label="Kuberknots on YouTube">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://open.spotify.com/show/4P1quzGHiM1mXM653Bmk1i" rel="noopener noreferrer" target="_blank">
+      <i class="bi bi-spotify" role="img" aria-label="Kuberknots on Spotify">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/kuberknots/" rel="noopener noreferrer" target="_blank">
+      <i class="bi bi-linkedin" role="img" aria-label="Kuberknots on LinkedIn">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
