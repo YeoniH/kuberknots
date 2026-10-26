@@ -2,7 +2,7 @@
 title: "Mathematics without Borders"
 subtitle: "Rowena Ball explores whose knowledge counts as mathematics, and what we gain by looking beyond conventional boundaries."
 date: "2026-10-14"
-image: "../assets/img/ep9_rowena.png"
+image: "../assets/img/Ep9_Thumbnail.png"
 categories: [mathematics, nonlinear dynamics, feedback, emergence, life, chemistry, communication, culture, Indigenous knowledge]
 comments: false
 ---
@@ -21,7 +21,7 @@ comments: false
 ::: {.episode-hero}
 <p class="eyebrow">Season 2 · Episode 9</p>
 
-# DESCRIPTION
+# Mathematics without Borders
 
 What counts as mathematics, and who gets to decide? Professor Rowena Ball explores mathematics beyond conventional boundaries, from Indigenous smoke telegraphy and information flow to nonlinear dynamics and the emergence of life. Through feedback, fluctuations and interconnected systems, we discover how diverse ways of knowing can reshape our understanding of the world.
 
