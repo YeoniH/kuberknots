@@ -3,7 +3,7 @@ title: "Mathematics as Relationships"
 subtitle: "What if mathematics is less about numbers and more about relationships? Discover an Indigenous perspective on maths, learning, and AI with Edward Doolittle."
 season: 2
 date: "2026-8-10"
-image: "../assets/img/ep7_edward.png"
+image: "../assets/img/Ep7_Thumbnail.png"
 categories: [Indigenous knowledge, mathematics]
 comments: false
 ---

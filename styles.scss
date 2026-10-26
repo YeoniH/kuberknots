@@ -226,7 +226,7 @@ summary:focus-visible {
 
 .episode-card img,
 .episode-thumb {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   background: var(--kk-cream);
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -426,7 +426,7 @@ summary {
 /* To change the aspect-ratio of thumbnail images for episodes */
 .quarto-grid-item .card-img-top,
 .quarto-grid-item img.thumbnail-image {
-  aspect-ratio: 4 / 3 !important;
+  aspect-ratio: 16 / 9 !important;
   height: auto !important;
   object-fit: cover;
   width: 100%;

@@ -3,7 +3,10 @@ title: ""
 comments: false
 listing:
   - id: season-2-listing
-    contents: "episodes/ep-00[7-9].qmd"
+    contents: 
+    - "episodes/ep-00[7-9].qmd"
+    #- "episodes/ep-010.qmd"
+    #- "episodes/ep-01[0-9].qmd"
     type: grid
     sort: "date desc"
     categories: numbered

@@ -3,7 +3,7 @@ title: "Control in the Age of AI"
 subtitle: "Maurice Chiodo reframes AI control through goals, requisite variety, and our ability to keep our own affairs in order."
 season: 2
 date: "2026-9-9"
-image: "../assets/img/ep8_maurice.png"
+image: "../assets/img/Ep8_Thumbnail.png"
 categories: [control, mathematics, cybernetics, requisite variety]
 comments: false
 ---
